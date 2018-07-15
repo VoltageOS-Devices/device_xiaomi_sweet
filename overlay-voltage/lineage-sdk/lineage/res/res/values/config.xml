@@ -24,6 +24,9 @@
         <item>us.zoom.videomeetings</item>
     </string-array>
 
+    <!-- Whether device has a notch -->
+    <bool name="config_haveNotch">true</bool>
+
     <!-- Pocket Lock -->
     <bool name="config_pocketModeSupported">false</bool>
 </resources>
