@@ -12,3 +12,4 @@ ro.com.google.ime.kb_pad_port_b=1
 
 # Graphics
 debug.sdm.support_writeback=0
+debug.cpurend.vsync=false
