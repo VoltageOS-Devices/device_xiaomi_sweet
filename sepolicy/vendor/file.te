@@ -9,3 +9,5 @@ type pps_socket, file_type;
 
 # sysfs
 type sysfs_kgsl, sysfs_type, fs_type;
+
+type proc_sched_energy_aware, proc_type, fs_type;
