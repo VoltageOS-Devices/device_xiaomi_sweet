@@ -473,7 +473,6 @@ vendor/etc/mixer_paths_qrd.xml
 vendor/etc/mixer_paths_tavil.xml
 vendor/etc/mixer_paths_wcd9375qrd.xml
 vendor/etc/mixer_paths_wcd9375.xml
-vendor/etc/msm_irqbalance.conf
 vendor/etc/noise_table_64_64.rgb
 vendor/etc/permissions/android.software.vulkan.deqp.level.xml
 vendor/etc/permissions/com.fingerprints.extension.xml
