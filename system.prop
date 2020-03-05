@@ -48,3 +48,13 @@ dalvik.vm.image-dex2oat-threads=8
 
 # Time
 persist.vendor.delta_time.enable=true
+
+# Dirac algo tsx 9/12
+hpx_send_params=1
+persist.dirac.acs.controller=qem
+persist.dirac.acs.storeSettings=1
+persist.dirac.acs.ignore_error=1
+
+# Dirac headset effect
+ro.audio.soundfx.dirac=true
+persist.audio.dirac.speaker=true
