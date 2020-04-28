@@ -142,6 +142,8 @@ dalvik.vm.dex2oat-filter=speed
 dalvik.vm.dex2oat-threads=8
 dalvik.vm.dex2oat64.enabled=true
 
+# Pre-Rendering
+ro.vendor.perf.scroll_opt=true
 
 # DPM
 persist.vendor.dpm.feature=1
