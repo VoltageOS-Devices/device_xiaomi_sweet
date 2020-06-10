@@ -188,8 +188,6 @@ persist.vendor.radio.data_ltd_sys_ind=1
 
 ro.vendor.mtp_boost.scheme=true
 
-debug.sf.latch_unsignaled=1
-
 ro.build.shutdown_timeout=2
 persist.vendor.quick.charge=1
 
