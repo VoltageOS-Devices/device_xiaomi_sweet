@@ -1,6 +1,5 @@
-allow hal_power sysfs:file { read open write getattr };
-allow hal_power input_device:dir { search read open };
-allow hal_power input_device:chr_file { read write open ioctl };
+allow hal_power sysfs:file { read open getattr };
+allow hal_power input_device:dir search;
 allow hal_power sysfs_devices_system_cpu:file { write };
 allow hal_power vendor_sysfs_devfreq:dir { search };
 allow hal_power vendor_sysfs_devfreq:file { read write open };
