@@ -64,6 +64,10 @@ PRODUCT_PACKAGES += \
     fastbootd \
     android.hardware.fastboot@1.0-impl-mock
 
+# Iorap
+PRODUCT_PACKAGES += \
+    iorap-app-startup-runner
+
 # Init
 PRODUCT_PACKAGES += \
     init.qcom.rc \
