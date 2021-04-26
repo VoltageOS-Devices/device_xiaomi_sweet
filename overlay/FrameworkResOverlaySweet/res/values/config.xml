@@ -569,4 +569,13 @@
         <item>115</item> <!--item>sensorRadius</item-->
     </array>
 
+    <!-- Paths to the libraries that contain device specific key handlers -->
+    <string-array name="config_deviceKeyHandlerLibs" translatable="false">
+        <item>/system/priv-app/KeyHandler/KeyHandler.apk</item>
+    </string-array>
+
+    <!-- Names of the key handler classes -->
+    <string-array name="config_deviceKeyHandlerClasses" translatable="false">
+        <item>com.aosp.keyhandler.KeyHandler</item>
+    </string-array>
 </resources>
