@@ -17,3 +17,4 @@ debug.cpurend.vsync=false
 # IORAP
 iorapd.readahead.enable=true
 ro.iorapd.enable=true
+iorapd.perfetto.enable=true
