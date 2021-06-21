@@ -27,6 +27,7 @@ import android.os.Handler;
 import android.util.Log;
 
 import androidx.preference.PreferenceManager;
+import org.lineageos.settings.device.haptic.HapticUtils;
 import org.lineageos.settings.device.thermal.ThermalUtils;
 import org.lineageos.settings.device.refreshrate.RefreshUtils;
 
@@ -52,6 +53,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         } catch (Exception e) {
             Log.d(TAG, "Dirac is not present in system");
         }
+        HapticUtils.restoreLevel(context);
         ThermalUtils.startService(context);
         RefreshUtils.startService(context);
     }

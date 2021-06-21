@@ -1,1 +1,3 @@
 genfscon proc /sys/kernel/sched_energy_aware      u:object_r:proc_sched_energy_aware:s0
+# Haptic
+/sys/devices/platform/soc/884000.i2c/i2c-3/3-005a/ulevel             u:object_r:sysfs_vibrator:s0
