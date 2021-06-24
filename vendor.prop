@@ -220,7 +220,7 @@ ro.vendor.display.sensortype=2
 ro.vendor.histogram.enable=true
 ro.vendor.bcbc.enable=true
 vendor.display.disable_metadata_dynamic_fps=1
-
+debug.sf.frame_rate_multiple_threshold=120
 
 # Fluence
 ro.qc.sdk.audio.fluencetype=none
