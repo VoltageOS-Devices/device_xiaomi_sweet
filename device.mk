@@ -373,11 +373,11 @@ PRODUCT_ENFORCE_RRO_TARGETS += *
 
 # Overlay-RRO
 PRODUCT_PACKAGES += \
-  	SettingsOverlayRR \
+    SettingsOverlayRR \
     SweetinproSettingsProvider \
     SweetinproWifiOverlay \
     SweetWifiOverlay
-    
+
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
