@@ -108,7 +108,6 @@ dalvik.vm.systemuicompilerfilter=speed
 # Data modules
 persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
-ro.telephony.iwlan_operation_mode=legacy
 
 
 # Dexopt
