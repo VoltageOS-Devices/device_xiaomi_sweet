@@ -249,5 +249,5 @@ persist.device_config.activity_manager.use_compaction=true
 
 # Chipset
 ro.soc.manufacturer=Qualcomm
-ro.soc.model=SDM7150
+ro.soc.model=SM7150
 
