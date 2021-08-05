@@ -15,4 +15,5 @@ debug.sdm.support_writeback=0
 debug.cpurend.vsync=false
 
 # IORAP
+iorapd.readahead.enable=true
 ro.iorapd.enable=true
