@@ -35,6 +35,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl
 
 PRODUCT_PACKAGES += \
+    sound_trigger.primary.sm6150 \
     android.hardware.soundtrigger@2.1-impl \
     android.hardware.soundtrigger@2.2-impl
 
