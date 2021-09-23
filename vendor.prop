@@ -286,8 +286,12 @@ persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.rat_on=combine
 vendor.usb.diag.func.name=diag
 vendor.usb.use_ffs_mtp=0
-debug.stagefright.omx_default_rank=0
-debug.stagefright.ccodec=1
+
+# Media
+debug.media.codec2=2
+debug.stagefright.ccodec=4
+debug.stagefright.omx_default_rank=512
+
 ro.incremental.enable=1
 af.fast_track_multiplier=1
 vendor.audio_hal.period_size=192
