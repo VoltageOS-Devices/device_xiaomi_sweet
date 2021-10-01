@@ -467,7 +467,6 @@ vendor/etc/media_codecs.xml
 vendor/etc/media_profiles.xml
 vendor/etc/mi_us_sweep.wav
 vendor/etc/mi_us_whitenoise.wav
-vendor/etc/mixer_paths_idp.xml
 vendor/etc/mixer_paths_overlay_dynamic.xml
 vendor/etc/mixer_paths_overlay_static.xml
 vendor/etc/mixer_paths_qrd.xml
