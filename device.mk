@@ -61,7 +61,10 @@ PRODUCT_COPY_FILES += \
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
-    android.hidl.manager@1.0
+    android.hidl.manager@1.0 \
+    android.hidl.allocator@1.0 \
+    libhidlbase \
+    libhidlbase.vendor
 
 # Fastbootd
 PRODUCT_PACKAGES += \
@@ -255,6 +258,7 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
+    android.frameworks.displayservice@1.0.vendor \
     android.hardware.graphics.composer@2.4-service \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
@@ -374,7 +378,13 @@ PRODUCT_PACKAGES += \
 # GPS
 PRODUCT_PACKAGES += \
      android.hardware.gnss@2.1-impl-qti \
-     android.hardware.gnss@2.1-service-qti
+     android.hardware.gnss@2.1-service-qti \
+     android.hardware.gnss@2.1 \
+     android.hardware.gnss@2.1.vendor \
+     android.hardware.gnss.measurement_corrections@1.1 \
+     android.hardware.gnss.measurement_corrections@1.1.vendor \
+     android.hardware.gnss.visibility_control@1.0 \
+     android.hardware.gnss.visibility_control@1.0.vendor
 
 PRODUCT_PACKAGES += \
      gps.conf \
