@@ -1,4 +1,3 @@
-Copyright (C) 2021 Nusantara Project
 
 # Device Tree for Xiaomi Redmi Note 10 Pro (sweet)
 
