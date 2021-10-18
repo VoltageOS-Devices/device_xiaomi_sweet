@@ -64,55 +64,9 @@ void full_property_override(const std::string &prop, const char value[], const b
     }
 }
 
-/* From Magisk@jni/magiskhide/hide_utils.c */
-static const char *snet_prop_key[] = {
-    "ro.boot.vbmeta.device_state",
-    "ro.boot.verifiedbootstate",
-    "ro.boot.flash.locked",
-    "ro.boot.selinux",
-    "ro.boot.veritymode",
-    "ro.boot.warranty_bit",
-    "ro.warranty_bit",
-    "ro.debuggable",
-    "ro.secure",
-    "ro.build.type",
-    "ro.build.tags",
-    "ro.build.selinux",
-    NULL
-};
-
- static const char *snet_prop_value[] = {
-    "locked",
-    "green",
-    "1",
-    "enforcing",
-    "enforcing",
-    "0",
-    "0",
-    "0",
-    "1",
-    "user",
-    "release-keys",
-    "1",
-    NULL
-};
-
- static void workaround_snet_properties() {
-
-     // Hide all sensitive props
-    for (int i = 0; snet_prop_key[i]; ++i) {
-        property_override(snet_prop_key[i], snet_prop_value[i]);
-    }
-
-    chmod("/sys/fs/selinux/enforce", 0640);
-    chmod("/sys/fs/selinux/policy", 0440);
-}
-
-
 void vendor_load_properties() {
     const bool is_global = (GetProperty("ro.boot.hwc", "UNKNOWN") == "GLOBAL");
     const bool is_pro = (GetProperty("ro.boot.product.hardware.sku", "UNKNOWN") != "std");
-    workaround_snet_properties();
 
     std::string marketname =
        !(!is_global && is_pro) ? "Redmi Note 10 Pro" : "Redmi Note 10 Pro Max";
