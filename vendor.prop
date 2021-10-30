@@ -155,7 +155,6 @@ debug.sf.earlyGl.app.duration=16666666
 debug.sf.enable_hwc_vds=0
 debug.force_no_blanking=true
 debug.sf.predict_hwc_composition_strategy=0
-debug.sf.latch_unsignaled=1
 debug.force_no_blanking=true
 ro.surface_flinger.protected_contents=true
 debug.sf.disable_client_composition_cache=1
