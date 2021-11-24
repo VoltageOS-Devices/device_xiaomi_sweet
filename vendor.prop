@@ -4,7 +4,6 @@ ro.vendor.product.cpu.abilist=arm64-v8a,armeabi-v7a,armeabi
 ro.vendor.product.cpu.abilist32=armeabi-v7a,armeabi
 ro.vendor.product.cpu.abilist64=arm64-v8a
 ro.board.platform=sm6150
-ro.hwui.use_vulkan=
 ro.vendor.colorpick_adjust=true
 ro.vendor.all_modes.colorpick_adjust=true
 ro.vendor.display.ad=1
