@@ -4,3 +4,6 @@ ro.adb.secure=0
 ro.secure=0
 ro.debuggable=1
 ro.control_privapp_permissions=log
+
+# Gboard
+ro.com.google.ime.kb_pad_port_b=1
