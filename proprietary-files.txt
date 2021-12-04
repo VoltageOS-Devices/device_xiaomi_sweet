@@ -748,6 +748,7 @@ vendor/lib64/egl/libq3dtools_adreno.so
 vendor/lib64/egl/libq3dtools_esx.so
 vendor/lib64/ftm_fm_lib.so
 vendor/lib64/hal_libnfc.so
+vendor/lib64/hw/android.hardware.health@2.0-impl-2.1.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so
 vendor/lib64/hw/android.hardware.broadcastradio@1.0-impl.so
@@ -1360,6 +1361,7 @@ vendor/lib/egl/libq3dtools_adreno.so
 vendor/lib/egl/libq3dtools_esx.so
 vendor/lib/ftm_fm_lib.so
 vendor/lib/hal_libnfc.so
+vendor/lib/hw/android.hardware.health@2.0-impl-2.1.so
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so
 vendor/lib/hw/android.hardware.broadcastradio@1.0-impl.so
