@@ -63,7 +63,7 @@
       "Values": [
         "0",
         "3",
-        "7"
+        "6"
       ],
       "ResetOnInit": true,
       "Type": "File"
@@ -348,7 +348,7 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMinFreq",
       "Duration": 500,
-      "Value": "0"
+      "Value": "3"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
