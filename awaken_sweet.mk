@@ -28,3 +28,6 @@ BUILD_FINGERPRINT := Xiaomi/dipper/dipper:8.1.0/OPM1.171019.011/V9.5.5.0.OEAMIFA
 # GApps
 USE_GAPPS := true
 WITH_GAPPS := true
+
+# Official
+AWAKEN_BUILD_TYPE := OFFICIAL
