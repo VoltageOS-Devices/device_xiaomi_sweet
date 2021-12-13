@@ -1920,3 +1920,6 @@ vendor/lib64/camera/com.qti.tuned.sweet_sunny_s5kgw3_wide.bin|db7480734847ad2c1e
 
 # From NX627J 20201029.204053
 vendor/lib64/libsdedrm.so|582910d21139781ad9e414c35207584f51e035e2
+
+# PowerOffAlarm
+-product/app/PowerOffAlarm/PowerOffAlarm.apk
