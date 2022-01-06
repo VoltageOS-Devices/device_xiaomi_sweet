@@ -110,7 +110,8 @@ PRODUCT_COPY_FILES += \
 # Device Settings
 PRODUCT_PACKAGES += \
     DeviceSettings \
-    init.devicesettings.rc
+    init.devicesettings.rc \
+    privapp-permissions-devicesettings.xml
 
 # Overlays
 PRODUCT_PACKAGES += \
