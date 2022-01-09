@@ -516,4 +516,6 @@
     <!--  Whether Multiuser UI should be shown -->
     <bool name="config_enableMultiUserUI">true</bool>
 
+   <!-- If not zero, limits the internal screen recorder's framerate to the set value -->
+   <integer name="config_screenRecorderMaxFramerate">90</integer>
 </resources>
