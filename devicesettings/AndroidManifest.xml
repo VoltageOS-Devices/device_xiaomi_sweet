@@ -118,7 +118,6 @@
             </intent-filter>
         </activity>
 
-
         <activity
             android:name=".haptic.HapticLevelActivity"
             android:label="@string/haptic_title"
@@ -178,6 +177,22 @@
             <meta-data
                 android:name="android.service.quicksettings.TOGGLEABLE_TILE"
                 android:value="true" />
+        </service>
+
+        <activity
+            android:name=".refreshrate.RefreshActivity"
+            android:label="@string/refresh_title"
+            android:exported="true"
+            android:theme="@style/Theme.SubSettingsBase">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".refreshrate.RefreshService"
+            android:permission="RefreshService">
         </service>
 
     </application>
