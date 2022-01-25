@@ -459,7 +459,6 @@ vendor/etc/media_codecs_performance_v2.xml
 vendor/etc/media_codecs_performance.xml
 vendor/etc/media_codecs_v1.xml
 vendor/etc/media_codecs_v2.xml
-vendor/etc/media_codecs_vendor_audio.xml
 vendor/etc/media_codecs_vendor_v1.xml
 vendor/etc/media_codecs_vendor_v2.xml
 vendor/etc/media_codecs_vendor.xml
