@@ -31,3 +31,9 @@ WITH_GAPPS := true
 
 # Official
 AWAKEN_BUILD_TYPE := OFFICIAL
+
+# Google Assistant
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+
+# Google Recorder
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
