@@ -65,3 +65,7 @@ persist.dirac.acs.ignore_error=1
 # Dirac headset effect
 ro.audio.soundfx.dirac=true
 persist.audio.dirac.speaker=true
+
+# Pre-rendering
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.vendor.perf.scroll_opt=true
