@@ -80,6 +80,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.usb.rc \
+    init.performance_level.rc \
     init.sweet.rc \
     init.target.rc
 
