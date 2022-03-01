@@ -37,3 +37,6 @@ TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
 # Google Recorder
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
+
+# Additional Pixel stuffs
+TARGET_INCLUDE_CARRIER_SETTINGS := true
