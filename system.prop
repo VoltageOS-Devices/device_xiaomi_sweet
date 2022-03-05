@@ -83,6 +83,9 @@ ro.vendor.use_data_netmgrd=true
 ro.vold.umsdirtyratio=20
 power.saving.mode=1
 
+# WiFi Display
+media.wfd.max_resolution=5
+
 # Zygote
 persist.device_config.runtime_native.usap_pool_enabled=true
 
