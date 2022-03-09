@@ -37,6 +37,6 @@
     <!-- Enable vibrate for calls by default -->
     <bool name="def_vibrate_when_ringing">true</bool>
 
-    <!-- Enable UI touch haptic feedback by default -->
-    <bool name="def_haptic_feedback">true</bool>
+    <!-- Disable UI touch haptic feedback by default -->
+    <bool name="def_haptic_feedback">false</bool>
 </resources>
