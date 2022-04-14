@@ -118,22 +118,6 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".refreshrate.RefreshActivity"
-            android:label="@string/refresh_title"
-            android:exported="true"
-            android:theme="@style/Theme.SubSettingsBase">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <service
-            android:name=".refreshrate.RefreshService"
-            android:permission="RefreshService"
-            android:exported="false">
-        </service>
 
         <activity
             android:name=".haptic.HapticLevelActivity"
@@ -163,16 +147,6 @@
             </intent-filter>
         </service>
 
-        <service
-            android:name=".RefreshRateTileService"
-            android:exported="true"
-            android:icon="@drawable/ic_qs_refresh_rate"
-            android:label="@string/refresh_rate_title"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
-        </service>
     </application>
 </manifest>
 
