@@ -254,6 +254,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libshim_megvii
 
+PRODUCT_PACKAGES += \
+    CutoutRingServiceSweet
+
 # Display
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
