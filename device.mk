@@ -148,15 +148,6 @@ PRODUCT_PACKAGES += \
     SystemUIOverlaySweet \
     TelephonyOverlaySweet
 
-# Accents
-PRODUCT_PACKAGES += \
-	AccentColorBetterYellowOverlay \
-	AccentColorBetterRedOverlay \
-	AccentColorBetterPinkOverlay \
-	AccentColorBetterOrangeOverlay \
-	AccentColorBetterGreenOverlay \
-	AccentColorBetterBlueOverlay
-
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.ims.xml \
@@ -211,10 +202,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
-
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePackages
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
