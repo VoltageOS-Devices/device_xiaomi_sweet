@@ -62,6 +62,11 @@ dalvik.vm.dex2oat-threads=8
 dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7
 dalvik.vm.image-dex2oat-threads=8
 
+# Blur
+ro.surface_flinger.supports_background_blur=1 
+persist.sys.sf.disable_blurs=1 
+ro.sf.blurs_are_expensive=1
+
 # Time
 persist.vendor.delta_time.enable=true
 
