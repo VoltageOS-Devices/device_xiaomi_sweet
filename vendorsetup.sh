@@ -12,6 +12,6 @@ git clone https://github.com/ArrowOS/android_hardware_qcom_display -b arrow-12.0
 git clone https://github.com/mrfox2003/vendor_xiaomi_sweet.git -b 12 vendor/xiaomi/sweet
 
 # Kernel & Clang
-git clone -b s12oss --depth=1 https://github.com/shashank1439/kernel_xiaomi_sweet.git kernel/xiaomi/sweet
+git clone -b courbet-12.1 --depth=1 https://github.com/mrfox2003/kernel_xiaomi_sm6150.git kernel/xiaomi/sweet
 git clone -b master --depth=1 https://github.com/kdrag0n/proton-clang.git prebuilts/clang/host/linux-x86/clang-proton
 
