@@ -239,8 +239,10 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
 
 # LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.1-service.xiaomi_sm6150
+ifneq ("$(wildcard hardware/lineage/livedisplay)", "")
+    PRODUCT_PACKAGES += \
+        vendor.lineage.livedisplay@2.1-service.xiaomi_sm6150
+endif
 
 # Media
 PRODUCT_PACKAGES += \

@@ -120,6 +120,13 @@ BOARD_BOOTIMG_HEADER_VERSION := 1
 endif
 BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 
+# LiveDisplay
+ifneq ("$(wildcard hardware/lineage/livedisplay)", "")
+    SOONG_CONFIG_NAMESPACES += livedisplay
+    SOONG_CONFIG_livedisplay += enabled
+    SOONG_CONFIG_livedisplay_enabled := true
+endif
+
 # Media
 TARGET_USES_ION := true
 TARGET_DISABLED_UBWC := true
