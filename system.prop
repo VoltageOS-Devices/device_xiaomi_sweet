@@ -28,6 +28,9 @@ persist.vendor.ims.disableIMSLogs=1
 persist.vendor.ims.disableQXDMLogs=1
 persist.vendor.qti.telephony.vt_cam_interface=2
 
+# HWUI
+debug.hwui.skia_atrace_enabled=false
+
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
