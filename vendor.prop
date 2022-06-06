@@ -13,7 +13,7 @@ ro.vendor.display.sensortype=2
 debug.force_no_blanking=true
 
 ro.vendor.display.type=oled
-
+ro.surface_flinger.protected_contents=true
 ro.vendor.bl.poll=true
 ro.vendor.eyecare.threshold=11
 ro.vendor.eyecare.level=5
