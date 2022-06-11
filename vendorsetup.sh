@@ -13,5 +13,4 @@ git clone https://github.com/mrfox2003/vendor_xiaomi_sweet.git -b 12 vendor/xiao
 
 # Kernel & Clang
 git clone -b courbet-12.1 --depth=1 https://github.com/mrfox2003/kernel_xiaomi_sm6150.git kernel/xiaomi/sweet
-git clone -b master --depth=1 https://github.com/kdrag0n/proton-clang.git prebuilts/clang/host/linux-x86/clang-proton
-
+git clone -b 15 --depth=1 https://gitlab.com/PixelOS-Devices/playgroundtc.git prebuilts/clang/host/linux-x86/clang-playground
