@@ -8,17 +8,13 @@ LOCAL_OVERRIDES_PACKAGES := \
     AmbientSensePrebuilt \
     arcore \
     Camera2 \
-    Chrome \
-    Chrome-Stub \
     ConnMO \
     ConnMetrics \
     DCMO \
     DevicePolicyPrebuilt \
     DMService \
-    Drive \
     GCS \
     GoogleCamera \
-    Maps \
     Music \
     MyVerizonServices \
     OBDM_Permissions \
@@ -27,10 +23,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     OemDmTrigger \
     OPScreenRecord \
     Ornament \
-    PixelLiveWallpaperPrebuilt \
-    Photos \
     PlayAutoInstallConfig \
-    PrebuiltGmail \
     RecorderPrebuilt \
     SafetyHubPrebuilt \
     SCONE \
@@ -47,7 +40,6 @@ LOCAL_OVERRIDES_PACKAGES := \
     Videos \
     VZWAPNLib \
     VzwOmaTrigger \
-    YouTube \
     YouTubeMusicPrebuilt
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
