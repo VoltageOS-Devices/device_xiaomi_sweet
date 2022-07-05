@@ -80,8 +80,6 @@ $(foreach p, $(BOARD_PARTITION_LIST), $(eval BOARD_$(p)IMAGE_PARTITION_RESERVED_
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USERIMAGES_USE_EXT4 := true
 
-VENDOR_SECURITY_PATCH := 2021-09-01
-
 # Compression
 PRODUCT_FS_COMPRESSION := 1
 
@@ -181,3 +179,5 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 
 # Media
 TARGET_DISABLED_UBWC := true
+
+include vendor/xiaomi/sweet/BoardConfigVendor.mk
