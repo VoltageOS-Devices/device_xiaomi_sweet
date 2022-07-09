@@ -3,6 +3,7 @@ ro.launcher.blur.appLaunch=0
 
 # Volume steps
 ro.config.media_vol_steps=15
+ro.config.vc_call_vol_steps=11
 
 # VoLTE
 persist.dbg.volte_avail_ovr=1
@@ -31,9 +32,6 @@ ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
 # WiFi Display
 persist.debug.wfd.enable=1
-
-# Media profiles
-media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
 # Camera
 persist.vendor.camera.facepp.fdenable=0
