@@ -12,5 +12,5 @@ git clone https://github.com/ArrowOS/android_hardware_qcom_display -b arrow-12.0
 git clone https://github.com/mrfox2003/vendor_xiaomi_sweet.git -b 12 vendor/xiaomi/sweet
 
 # Kernel & Clang
-git clone -b courbet-12.1 --depth=1 https://github.com/mrfox2003/kernel_xiaomi_sm6150.git kernel/xiaomi/sweet
+git clone -b courbet-12.1 --depth=1 https://github.com/vantoman/kernel_xiaomi_sm6150.git kernel/xiaomi/sweet
 git clone -b 15 --depth=1 https://gitlab.com/PixelOS-Devices/playgroundtc.git prebuilts/clang/host/linux-x86/clang-playground
