@@ -1076,6 +1076,7 @@ vendor/lib64/libsdedrm.so
 vendor/lib64/libsdk_sr.so
 vendor/lib64/libsdm-colormgr-algo.so
 vendor/lib64/libsdm-color.so
+vendor/lib64/libsdmcore.so
 vendor/lib64/libsdm-diag.so
 vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libsdmextension.so
@@ -1947,5 +1948,3 @@ vendor/lib64/camera/com.qti.tuned.sweet_sunny_s5kgw3_wide.bin|69755c55507ad9cde3
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a58554d9c0dd0608552b644fbf74519a447bb
 -system_ext/framework/com.android.hotwordenrollment.common.util.jar|bef92589e75a6da6043f85f4b9b0e85866429624
 
-# Patched libraries
-vendor/lib64/libsdmcore.so|c1fb37069254edeefc008e290490825719d9af4c
