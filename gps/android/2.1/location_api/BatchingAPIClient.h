@@ -43,9 +43,6 @@ namespace gnss {
 namespace V2_1 {
 namespace implementation {
 
-
-enum BATCHING_STATE { STARTED, STOPPING, STOPPED };
-
 class BatchingAPIClient : public LocationAPIClientBase
 {
 public:
@@ -75,9 +72,6 @@ private:
     uint32_t mDefaultId;
     LocationCapabilitiesMask mLocationCapabilitiesMask;
     sp<V2_0::IGnssBatchingCallback> mGnssBatchingCbIface_2_0;
-    volatile BATCHING_STATE mState = STOPPED;
-
-    std::vector<Location> mBatchedLocationInCache;
 };
 
 }  // namespace implementation

@@ -31,7 +31,6 @@
 #define LOG_TAG "LocSvc_GnssAPIClient"
 #define SINGLE_SHOT_MIN_TRACKING_INTERVAL_MSEC (590 * 60 * 60 * 1000) // 590 hours
 
-#include <inttypes.h>
 #include <log_util.h>
 #include <loc_cfg.h>
 
@@ -142,7 +141,9 @@ void GnssAPIClient::setCallbacks()
     locationCallbacks.gnssNiCb = nullptr;
     if (mGnssNiCbIface != nullptr) {
         loc_core::ContextBase* context =
-                loc_core::LocContext::getLocContext(loc_core::LocContext::mLocationHalName);
+                loc_core::LocContext::getLocContext(
+                        NULL, NULL,
+                        loc_core::LocContext::mLocationHalName, false);
         if (!context->hasAgpsExtendedCapabilities()) {
             LOC_LOGD("Registering NI CB");
             locationCallbacks.gnssNiCb = [this](uint32_t id, GnssNiNotification gnssNiNotify) {
@@ -381,7 +382,7 @@ void GnssAPIClient::requestCapabilities() {
 // callbacks
 void GnssAPIClient::onCapabilitiesCb(LocationCapabilitiesMask capabilitiesMask)
 {
-    LOC_LOGD("%s]: (%" PRIu64 ")", __FUNCTION__, capabilitiesMask);
+    LOC_LOGD("%s]: (%02x)", __FUNCTION__, capabilitiesMask);
     mLocationCapabilitiesMask = capabilitiesMask;
     mLocationCapabilitiesCached = true;
 

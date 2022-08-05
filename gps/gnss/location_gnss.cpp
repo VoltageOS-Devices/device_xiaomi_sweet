@@ -66,8 +66,8 @@ static void agpsDataConnOpen(AGpsExtType agpsType, const char* apnName, int apnL
 static void agpsDataConnClosed(AGpsExtType agpsType);
 static void agpsDataConnFailed(AGpsExtType agpsType);
 static void getDebugReport(GnssDebugReport& report);
-static void updateConnectionStatus(bool connected, int8_t type, bool roaming,
-                                   NetworkHandle networkHandle, string& apn);
+static void updateConnectionStatus(bool connected, int8_t type, bool roaming = false,
+                                   NetworkHandle networkHandle = NETWORK_HANDLE_UNKNOWN);
 static void getGnssEnergyConsumed(GnssEnergyConsumedCallback energyConsumedCb);
 static void enableNfwLocationAccess(bool enable);
 static void nfwInit(const NfwCbInfo& cbInfo);
@@ -92,7 +92,6 @@ static uint32_t configMinGpsWeek(uint16_t minGpsWeek);
 static uint32_t configDeadReckoningEngineParams(const DeadReckoningEngineConfig& dreConfig);
 static uint32_t gnssUpdateSecondaryBandConfig(const GnssSvTypeConfig& secondaryBandConfig);
 static uint32_t gnssGetSecondaryBandConfig();
-static void resetNetworkInfo();
 
 static void updateNTRIPGGAConsent(bool consentAccepted);
 static void enablePPENtripStream(const GnssNtripConnectionParams& params, bool enableRTKEngine);
@@ -103,7 +102,6 @@ static bool measCorrSetCorrections(const GnssMeasurementCorrections gnssMeasCorr
 static void measCorrClose();
 static uint32_t antennaInfoInit(const antennaInfoCb antennaInfoCallback);
 static void antennaInfoClose();
-static uint32_t configEngineRunState(PositioningEngineMask engType, LocEngineRunState engState);
 
 static const GnssInterface gGnssInterface = {
     sizeof(GnssInterface),
@@ -161,8 +159,6 @@ static const GnssInterface gGnssInterface = {
     disablePPENtripStream,
     gnssUpdateSecondaryBandConfig,
     gnssGetSecondaryBandConfig,
-    resetNetworkInfo,
-    configEngineRunState
 };
 
 #ifndef DEBUG_X86
@@ -371,11 +367,10 @@ static void getDebugReport(GnssDebugReport& report) {
 }
 
 static void updateConnectionStatus(bool connected, int8_t type,
-                                   bool roaming, NetworkHandle networkHandle,
-                                   string& apn) {
+                                   bool roaming, NetworkHandle networkHandle) {
     if (NULL != gGnssAdapter) {
         gGnssAdapter->getSystemStatus()->eventConnectionStatus(
-                connected, type, roaming, networkHandle, apn);
+                connected, type, roaming, networkHandle);
     }
 }
 
@@ -436,12 +431,6 @@ static void injectLocationExt(const GnssLocationInfoNotification &locationInfo)
 static void updateBatteryStatus(bool charging) {
     if (NULL != gGnssAdapter) {
         gGnssAdapter->getSystemStatus()->updatePowerConnectState(charging);
-    }
-}
-
-static void resetNetworkInfo() {
-    if (NULL != gGnssAdapter) {
-        gGnssAdapter->getSystemStatus()->resetNetworkInfo();
     }
 }
 
@@ -519,7 +508,7 @@ static uint32_t antennaInfoInit(const antennaInfoCb antennaInfoCallback) {
 static void antennaInfoClose() {
     if (NULL != gGnssAdapter) {
         return gGnssAdapter->antennaInfoCloseCommand();
-    }
+	}
 }
 
 static uint32_t configRobustLocation(bool enable, bool enableForE911){
@@ -581,13 +570,5 @@ static void disablePPENtripStream(){
     if (NULL != gGnssAdapter) {
         // Call will be enabled once GnssAdapter impl. is ready.
         gGnssAdapter->disablePPENtripStreamCommand();
-    }
-}
-
-static uint32_t configEngineRunState(PositioningEngineMask engType, LocEngineRunState engState) {
-    if (NULL != gGnssAdapter) {
-        return gGnssAdapter->configEngineRunStateCommand(engType, engState);
-    } else {
-        return 0;
     }
 }

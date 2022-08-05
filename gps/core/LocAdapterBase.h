@@ -156,7 +156,7 @@ public:
         return ContextBase::isFeatureSupported(featureVal);
     }
 
-    static uint32_t generateSessionId();
+    uint32_t generateSessionId();
 
     inline bool isAdapterMaster() {
         return mIsMaster;
@@ -236,9 +236,6 @@ public:
                              removeClientCompleteCallback rmClientCb);
     void requestCapabilitiesCommand(LocationAPI* client);
 
-    virtual void reportLatencyInfoEvent(const GnssLatencyInfo& gnssLatencyInfo);
-    virtual bool reportQwesCapabilities(
-            const std::unordered_map<LocationQwesFeatureType, bool> &featureMap);
 };
 
 } // namespace loc_core
