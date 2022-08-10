@@ -45,6 +45,10 @@
 # Vibrator
 /vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.xiaomi_sm6150    u:object_r:hal_vibrator_default_exec:s0
 
+# Displayfeature
+/vendor/bin/displayfeature                                              u:object_r:vendor_displayfeature_exec:s0
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.displayfeature@1\.0-service    u:object_r:vendor_hal_displayfeature_xiaomi_default_exec:s0
+
 # IR
 /dev/ir_spi                                                          u:object_r:vendor_ir_device:s0
 
