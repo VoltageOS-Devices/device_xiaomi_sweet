@@ -112,9 +112,6 @@ dalvik.vm.dex2oat-filter=speed
 dalvik.vm.dex2oat-threads=8
 dalvik.vm.dex2oat64.enabled=true
 
-# Dolby
-persist.vendor.audio_fx.current=dolby
-ro.vendor.dolby.dax.version=DS1_2.2.0.0_r1
 
 # DPM
 persist.vendor.dpm.feature=1
@@ -173,7 +170,6 @@ persist.vendor.qti.telephony.vt_cam_interface=2
 # Media
 debug.stagefright.ccodec=1
 debug.stagefright.omx_default_rank=0
-debug.stagefright.omx_default_rank.sw-audio=16
 
 # Netflix custom property
 ro.netflix.bsp_rev=Q6150-17263-1
