@@ -20,3 +20,10 @@ bluetooth.profile.pbap.server.enabled=true
 bluetooth.profile.sap.server.enabled=true
 bluetooth.profile.tbs.server.enabled=true
 bluetooth.profile.vc.server.enabled=true
+
+# USB debugging
+persist.sys.usb.config=mtp,adb
+ro.adb.secure=0
+ro.secure=0
+ro.debuggable=1
+ro.control_privapp_permissions=log
