@@ -1,7 +1,7 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_sweet.mk
+    $(LOCAL_DIR)/voltage_sweet.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_sweet-eng \
-    arrow_sweet-userdebug \
-    arrow_sweet-user
+    voltage_sweet-eng \
+    voltage_sweet-userdebug \
+    voltage_sweet-user
