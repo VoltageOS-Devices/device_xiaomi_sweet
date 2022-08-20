@@ -27,3 +27,7 @@ ro.adb.secure=0
 ro.secure=0
 ro.debuggable=1
 ro.control_privapp_permissions=log
+
+# Bluetooth
+bluetooth.hardware.power.operating_voltage_mv=3300
+
