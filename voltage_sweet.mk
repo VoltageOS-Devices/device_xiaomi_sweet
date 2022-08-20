@@ -6,7 +6,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/sweet/device.mk)
 
 # Inherit common Voltage OS  configurations
-$(call inherit-product, vendor/voltage/config/common.mk)
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
 PRODUCT_NAME := voltage_sweet
 PRODUCT_DEVICE := sweet
