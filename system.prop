@@ -12,6 +12,9 @@ debug.sf.enable_hwc_vds=1
 debug.sf.latch_unsignaled=1
 ro.sf.lcd_density=440
 
+# Bluetooth
+bluetooth.device.class_of_device=90,2,12
+
 # WiFi Display
 persist.debug.wfd.enable=1
 
