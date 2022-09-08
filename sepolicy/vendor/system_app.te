@@ -6,5 +6,8 @@ allow system_app sysfs_doze:file rw_file_perms;
 allow system_app sysfs_vibrator:dir search;
 allow system_app sysfs_vibrator:file rw_file_perms;
 
-# Xiaomi Parts
+# Device settings
 allow system_app sysfs_thermal:file rw_file_perms;
+allow system_app sysfs_dm:file rw_file_perms;
+allow system_app vendor_sysfs_graphics:dir r_dir_perms;
+allow system_app vendor_sysfs_graphics:file rw_file_perms;
