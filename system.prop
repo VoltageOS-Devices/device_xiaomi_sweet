@@ -17,6 +17,7 @@ ro.sf.blurs_are_expensive=1
 
 # Camera
 vendor.camera.aux.packagelist=com.android.camera
+vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram
 
 # Charger
 ro.charger.enable_suspend=true
