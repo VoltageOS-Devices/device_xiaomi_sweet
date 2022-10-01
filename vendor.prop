@@ -264,3 +264,6 @@ ro.hardware.wlan.mimo=1
 wifi.aware.interface=wifi-aware0
 ro.telephony.iwlan_operation_mode=legacy
 ro.hardware.wlan.dbs=0
+
+# Zygote
+zygote.critical_window.minute=10
