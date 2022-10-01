@@ -115,6 +115,13 @@
      regularly selected color mode will be used if this value is negative. -->
     <integer name="config_accessibilityColorMode">2</integer>
 
+    <!-- The list of components which should be automatically disabled for a specific package. --> 
+    <string-array name="config_deviceDisabledComponents" translatable="false">
+     <item>com.google.android.googlequicksearchbox/com.google.android.hotword.service.HotwordService</item>
+     <item>com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver</item>
+     <item>com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver</item>
+    </string-array>
+
     <!-- The following two arrays specify which color space to use for display composition when a
          certain color mode is active.
          Composition color spaces are defined in android.view.Display.COLOR_MODE_xxx, and color
