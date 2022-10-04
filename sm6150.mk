@@ -77,6 +77,8 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    libldacBT_enc \
+    libldacBT_abr \
     android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth@1.1.vendor \
     vendor.qti.hardware.bluetooth_audio@2.1.vendor \
