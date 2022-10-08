@@ -18,5 +18,8 @@
 
         <!-- Allow more cached apps in the background -->
         <item>activity_manager/max_cached_processes=64</item>
+
+        <!-- Don't pin camera app to save memory -->
+        <item>runtime_native_boot/pin_camera=false</item>
     </string-array>
 </resources>
