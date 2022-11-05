@@ -21,5 +21,6 @@
     <string-array name="config_cameraAuxPackageAllowList" translatable="false">
         <item>com.android.camera</item>
         <item>vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram</item>
+        <item>us.zoom.videomeetings</item>
     </string-array>
 </resources>
