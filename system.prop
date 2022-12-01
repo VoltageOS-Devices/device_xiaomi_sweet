@@ -54,6 +54,10 @@ ro.telephony.default_cdma_sub=0
 ro.telephony.default_network=22,22
 telephony.lteOnCdmaDevice=1
 
+# Render
+debug.cpurend.vsync=false
+
+
 # Recovery
 ro.recovery.ui.margin_height=48
 
