@@ -109,6 +109,9 @@ system_ext/framework/audiosphere.jar
 -vendor/lib/soundfx/libasphere.so
 -vendor/lib/soundfx/libshoebox.so
 -vendor/lib/soundfx/libmisoundfx.so
+-vendor/lib/soundfx/libswvqe.so
+-vendor/lib64/soundfx/libswvqe.so
+vendor/lib/libstagefright_soft_qtiflacdec.so
 
 # Batterysecret
 -vendor/bin/batterysecret
