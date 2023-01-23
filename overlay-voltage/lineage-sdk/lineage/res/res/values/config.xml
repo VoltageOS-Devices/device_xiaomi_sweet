@@ -23,4 +23,7 @@
         <item>vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram</item>
         <item>us.zoom.videomeetings</item>
     </string-array>
+
+    <!-- Pocket Lock -->
+    <bool name="config_pocketModeSupported">false</bool>
 </resources>
