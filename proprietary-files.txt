@@ -329,7 +329,7 @@ system_ext/framework/com.android.hotwordenrollment.common.util.jar|c764b636e0be4
 -system_ext/lib64/libimsmedia_jni.so
 -system_ext/lib64/vendor.qti.diaghal@1.0.so
 -system_ext/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE=vendor.qti.imsrtpservice@3.0_system_ext
-system_ext/priv-app/ims/ims.apk
+system_ext/priv-app/ims/ims.apk|c9bfae627380ff34ec9b6352fc76b107da24c756
 -vendor/bin/ims_rtp_daemon
 -vendor/bin/imsdatadaemon
 -vendor/bin/imsqmidaemon
