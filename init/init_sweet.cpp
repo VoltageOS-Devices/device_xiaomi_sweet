@@ -92,6 +92,13 @@ void vendor_load_properties() {
         description = "sweet_eea-user 12 SKQ1.210908.001 V13.0.6.0.SKFEUXM release-keys";
         mod_device = "sweet_eea_global";
         property_override("ro.boot.product.hardware.sku", "sweet");
+    } else if (region == "JAPAN") {
+        model = "M2101K6R";
+        device = "sweet";
+        fingerprint = "Redmi/sweet_global/sweet:12/SKQ1.210908.001/V13.0.16.0.SKFMIXM:user/release-keys";
+        description = "sweet_global-user 12 SKQ1.210908.001 V13.0.16.0.SKFMIXM release-keys";
+        mod_device = "sweet_global";
+        property_override("ro.boot.product.hardware.sku", "sweet");
     } else if (region == "INDIA") {
         if (sku == "std") {
             model = "M2101K6P";
@@ -106,12 +113,6 @@ void vendor_load_properties() {
             description = "sweetinpro-user 12 SKQ1.210908.001 V13.0.3.0.SKFINXM release-keys";
             mod_device = "sweetin_in_global";
             }
-    } else if (region == "JAPAN") {
-        model = "M2101K6R";
-        device = "sweet";
-        fingerprint = "Redmi/sweet_global/sweet:11/RKQ1.200826.002/V12.5.4.0.RKFMIXM:user/release-keys";
-        description = "sweet_global-user 11 RKQ1.200826.002 V12.5.4.0.RKFMIXM release-keys";
-        mod_device = "sweet_global";
     }
 
     set_ro_build_prop("fingerprint", fingerprint);
