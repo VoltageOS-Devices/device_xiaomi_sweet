@@ -182,7 +182,9 @@ PRODUCT_PACKAGES += \
     libbatching \
     libgeofencing \
     libgnss \
-    libsensorndkbridge
+    libsensorndkbridge \
+    libloc_net_iface \
+    liblocdiagiface 
 
 PRODUCT_PACKAGES += \
     gnss@2.0-base.policy \
