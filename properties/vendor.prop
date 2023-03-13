@@ -195,9 +195,6 @@ ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.config.avoid_gfx_accel=true
 debug.sf.frame_rate_multiple_threshold=120
 
-# FRP
-ro.frp.pst=/dev/block/bootdevice/by-name/frp
-
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
