@@ -77,6 +77,13 @@ vendor.audio.usb.disable.sidetone=true
 vendor.audio.use.sw.alac.decoder=true
 vendor.audio.use.sw.ape.decoder=true
 vendor.audio.volume.headset.gain.depcal=true
+persist.vendor.audio.hifi=false
+persist.vendor.audio.ring.filter.mask=0
+ro.vendor.audio.soundfx.usb=true
+ro.vendor.audio.us.type=mius
+persist.vendor.audio.voicecall.speaker.stereo=true
+vendor.audio.feature.compr_voip.enable=false
+vendor.voice.path.for.pcm.voip=false
 
 # Bluetooth
 persist.bluetooth.a2dp_offload.disabled=false
@@ -185,12 +192,25 @@ ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
 persist.vendor.radio.report_codec=1
 persist.vendor.radio.vdp_on_ims_cap=1
 
+# Fluence
+ro.qc.sdk.audio.fluencetype=none
+persist.audio.fluence.voicecall=true
+persist.audio.fluence.voicerec=false
+persist.audio.fluence.speaker=true
+ro.vendor.audio.sdk.fluencetype=fluence
+persist.vendor.audio.fluence.voicecall=true
+persist.vendor.audio.fluence.voicecomm=true
+vendor.audio.feature.fluence.enable=true
+
 # Media
 debug.stagefright.ccodec=1
 debug.stagefright.omx_default_rank=0
 
 # Netflix custom property
 ro.netflix.bsp_rev=Q6150-17263-1
+
+# Perf
+ro.vendor.extension_library=libqti-perfd-client.so
 
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
@@ -223,15 +243,6 @@ suspend.max_sleep_time_millis=40000
 
 # Zygote
 zygote.critical_window.minute=10
-
-# Dolby
-vendor.audio.dolby.ds2.enabled=true
-vendor.audio.dolby.ds2.hardbypass=false
-ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1
-ro.vendor.product.device.db=OP_DEVICE
-ro.vendor.product.manufacturer.db=OP_PHONE
-vendor.product.device=OP_PHONE
-vendor.product.manufacturer=OPD
 
 # Cached app compaction
 persist.device_config.activity_manager.use_compaction=true
