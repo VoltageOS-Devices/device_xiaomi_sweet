@@ -260,7 +260,7 @@ zygote.critical_window.minute=10
 persist.device_config.activity_manager.use_compaction=true
 
 # Chipset
-ro.soc.manufacturer=Qualcomm
+ro.soc.manufacturer=QTI
 ro.soc.model=SM7150
 
 # Dolby
