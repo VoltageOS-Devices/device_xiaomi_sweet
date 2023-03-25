@@ -435,18 +435,6 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 -vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
-# Display - from LA.UM.9.1.r1-12900-SMxxx0.0
--vendor/lib64/libdisplayqos.so|5548732c916e629f18f45ce257ce843b679a136a
--vendor/lib64/libhdr_tm.so|a222a7d838735c5ce73f06d4096fea3ca19611c8
--vendor/lib64/libqseed3.so|7f2a659fb9acd84d79c11dbd6901b816d5d1214f
--vendor/lib64/libsdm-color.so|d0984c33dcbf84940676917e0c3584b0ccfeaf03
--vendor/lib64/libsdm-colormgr-algo.so|15f696a4575868e528360896f1e0098d531899c0
--vendor/lib64/libsdm-diag.so|8c038fda1addb5c9cb075d6ae1000698782ddd8b
--vendor/lib64/libsdm-disp-vndapis.so|60da199073d2b0881bf075190a644b332503f39c
--vendor/lib64/libsdmextension.so|e10d29f29b7a53b75369e58e8a165b2b86609f26
--vendor/lib64/libtinyxml2_1.so|ff32deb110acb02cb5def5f3404f9064c1276483
--vendor/lib64/libsdedrm.so|2a9a6f8b79ee8c916a656a670b3670105e143418
-
 # DPM - from LA.UM.9.1.r1-12900-SMxxx0.0
 system/framework/tcmclient.jar|0402c82a800b58a2e93fd7cb8e81a24e674ebc35
 system_ext/bin/dpmd|691d6f96927f199cfff447ab6ba7202e415fd5d7
@@ -537,6 +525,16 @@ vendor/lib64/libsdmcore.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libsdmutils.so
 vendor/lib64/libtinyxml2_1.so
+-vendor/lib64/libdisplayqos.so
+-vendor/lib64/libhdr_tm.so
+-vendor/lib64/libqseed3.so
+-vendor/lib64/libsdm-color.so
+-vendor/lib64/libsdm-colormgr-algo.so
+-vendor/lib64/libsdm-diag.so
+-vendor/lib64/libsdm-disp-vndapis.so
+-vendor/lib64/libsdmextension.so
+-vendor/lib64/libtinyxml2_1.so
+-vendor/lib64/libsdedrm.so
 
 # Display Feature
 vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
