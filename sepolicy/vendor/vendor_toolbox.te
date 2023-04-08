@@ -38,3 +38,16 @@ allow vendor_toolbox {
     vendor_persist_time_file
     vendor_persist_vpp_file
 }:dir { r_dir_perms setattr };
+
+allow vendor_toolbox mnt_vendor_file:file { getattr };
+allow vendor_toolbox vendor_persist_camera_file:file { getattr };
+allow vendor_toolbox vendor_persist_sensors_file:file { getattr };
+allow vendor_toolbox vendor_persist_time_file:file { getattr };
+allow vendor_toolbox vendor_persist_audio_file:file { getattr };
+allow vendor_toolbox persist_subsys_file:dir { getattr };
+allow vendor_toolbox vendor_persist_haptics_file:file { getattr };
+allow vendor_toolbox media_rw_data_file:file { getattr };
+allow vendor_toolbox mnt_vendor_file:file { getattr };
+allow vendor_toolbox vendor_toolbox:capability { dac_read_search };
+allow vendor_toolbox vendor_toolbox:capability { dac_override };
+allow vendor_toolbox vendor_persist_hvdcp_file:file { getattr };
