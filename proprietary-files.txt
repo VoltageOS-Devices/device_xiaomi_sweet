@@ -358,9 +358,9 @@ vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
 vendor/lib64/camera/fdconfigvideolite.bin
 
-# Camera-sensors - V13.0.10.0.SKFINXM-release-keys
-vendor/lib64/camera/com.qti.tuned.sweet_ofilm_s5kgw3_wide.bin|1d8c75a2f59b695165fc526512094ae285addce7
-vendor/lib64/camera/com.qti.tuned.sweet_sunny_s5kgw3_wide.bin|bf85d01ff12d6431c0a674f4b9d05bb529a4df15
+# Camera-sensors - V14.0.1.0.TKFINXM-release-keys
+vendor/lib64/camera/com.qti.tuned.sweet_ofilm_s5kgw3_wide.bin|727410454921cbf6d56837ebf5c930fb948d7f15
+vendor/lib64/camera/com.qti.tuned.sweet_sunny_s5kgw3_wide.bin|34718fcf0dd5d3d30e383e02824145204772676d
 
 # Charger
 -vendor/bin/hvdcp_opti
