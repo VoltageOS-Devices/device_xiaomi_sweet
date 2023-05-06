@@ -64,6 +64,8 @@ vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb|e98d5e4bbd2afe7fb18a206dd4f157a
 vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp|e48a5798ea09afc1ad47c02939846a6a51221811
 
 # Awinic firmware
+vendor/firmware/aw8624_haptic.bin
+vendor/firmware/aw8624_rtp.bin
 vendor/firmware/awinic/aw882xx_pid_1852_acf.bin
 vendor/firmware/awinic/aw882xx_pid_1852_monitor.bin
 vendor/firmware/awinic/aw882xx_pid_2032_acf.bin
@@ -72,17 +74,15 @@ vendor/firmware/awinic/aw882xx_rcv_reg_l.bin
 vendor/firmware/awinic/aw882xx_rcv_reg_r.bin
 vendor/firmware/awinic/aw882xx_spk_reg_l.bin
 vendor/firmware/awinic/aw882xx_spk_reg_r.bin
-vendor/firmware/aw8624_haptic.bin
-vendor/firmware/aw8624_rtp.bin
 vendor/firmware/osc_rtp_24K_5s.bin
 
 # Audio HAL
 -vendor/lib/hw/audio.primary.sm6150.so
--vendor/lib/vndk/libxlog.so
 -vendor/lib/libaudio_log_utils.so
 -vendor/lib/libaudioparsers.so
 -vendor/lib/libaudioroute_ext.so
 -vendor/lib/libqtigef.so
+-vendor/lib/vndk/libxlog.so
 
 # Audio extensions
 -vendor/lib/btaudio_offload_if.so
@@ -106,12 +106,12 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 # Audio FX modules
 system_ext/etc/permissions/audiosphere.xml
 system_ext/framework/audiosphere.jar
+vendor/lib/libstagefright_soft_qtiflacdec.so
 -vendor/lib/soundfx/libasphere.so
--vendor/lib/soundfx/libshoebox.so
 -vendor/lib/soundfx/libmisoundfx.so
+-vendor/lib/soundfx/libshoebox.so
 -vendor/lib/soundfx/libswvqe.so
 -vendor/lib64/soundfx/libswvqe.so
-vendor/lib/libstagefright_soft_qtiflacdec.so
 
 # Batterysecret
 -vendor/bin/batterysecret
@@ -120,8 +120,12 @@ vendor/etc/init/init.batterysecret.rc
 # Bluetooth
 -vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
+-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
+-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
 -vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
 -vendor/lib/libbluetooth_audio_session_qti.so
+-vendor/lib/libbluetooth_audio_session_qti.so
+-vendor/lib/libbluetooth_audio_session_qti_2_1.so
 -vendor/lib/libbluetooth_audio_session_qti_2_1.so
 -vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 -vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
@@ -132,10 +136,6 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 -vendor/lib64/libsoc_helper_jni.so
 -vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 -vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
--vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
--vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
--vendor/lib/libbluetooth_audio_session_qti.so
--vendor/lib/libbluetooth_audio_session_qti_2_1.so
 
 # Camera
 -vendor/lib64/hw/camera.qcom.so
@@ -218,11 +218,6 @@ vendor/lib64/mibokeh_712_opencl.bin
 -vendor/lib64/libarcsoft_super_night_raw.so|a725136e8fe0c9ffd6b5ed527fd480478c9fd57d
 
 # Camera-components
-vendor/lib64/camera/components/etc/morpho_lowlight4.0.xml
-vendor/lib64/camera/components/etc/morpho_lowlight4.0_3hdr.xml
-vendor/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high.xml
-vendor/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high_1.xml
-vendor/lib64/camera/components/etc/visidon_clearshot_params.xml
 -vendor/lib64/camera/components/com.altek.node.depurple.so
 -vendor/lib64/camera/components/com.altek.node.distortioncorrection.so
 -vendor/lib64/camera/components/com.arcsoft.node.capturebokeh.so
@@ -277,6 +272,11 @@ vendor/lib64/camera/components/etc/visidon_clearshot_params.xml
 -vendor/lib64/camera/components/com.xiaomi.node.mifragment.so
 -vendor/lib64/camera/components/com.xiaomi.node.mimovie.so
 -vendor/lib64/camera/components/com.xiaomi.node.misegment.so
+vendor/lib64/camera/components/etc/morpho_lowlight4.0.xml
+vendor/lib64/camera/components/etc/morpho_lowlight4.0_3hdr.xml
+vendor/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high.xml
+vendor/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high_1.xml
+vendor/lib64/camera/components/etc/visidon_clearshot_params.xml
 -vendor/lib64/camera/components/libdepthmapwrapper.so
 -vendor/lib64/camera/components/libmmcamera_cac3.so
 
@@ -463,8 +463,8 @@ vendor/etc/init/dpmQmiMgr.rc
 
 # DRM
 -vendor/bin/qseecomd
-vendor/etc/init/qseecomd.rc
 vendor/etc/gpfspath_oem_config.xml
+vendor/etc/init/qseecomd.rc
 -vendor/lib64/libGPreqcancel.so
 -vendor/lib64/libGPreqcancel_svc.so
 -vendor/lib64/libQSEEComAPI.so
@@ -485,8 +485,8 @@ vendor/etc/gpfspath_oem_config.xml
 -vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
--vendor/lib64/mediadrm/libwvdrmengine.so
 -vendor/lib64/libwvhidl.so
+-vendor/lib64/mediadrm/libwvdrmengine.so
 
 # DSP
 -vendor/bin/dspservice
@@ -503,9 +503,9 @@ vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 
 # Display
 vendor/bin/qdcmss
-vendor/etc/init/qdcmss.rc
 vendor/etc/dsi_k6_38_0c_0a_fhd_dsc_video_display_mi.xml
 vendor/etc/hdr_config.cfg
+vendor/etc/init/qdcmss.rc
 vendor/etc/sdr_config.cfg
 vendor/lib64/hw/hwcomposer.sm6150.so
 vendor/lib64/libclient2slpi.notifier.so
@@ -528,16 +528,6 @@ vendor/lib64/libsdmcore.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libsdmutils.so
 vendor/lib64/libtinyxml2_1.so
--vendor/lib64/libdisplayqos.so
--vendor/lib64/libhdr_tm.so
--vendor/lib64/libqseed3.so
--vendor/lib64/libsdm-color.so
--vendor/lib64/libsdm-colormgr-algo.so
--vendor/lib64/libsdm-diag.so
--vendor/lib64/libsdm-disp-vndapis.so
--vendor/lib64/libsdmextension.so
--vendor/lib64/libtinyxml2_1.so
--vendor/lib64/libsdedrm.so
 
 # Display Feature
 vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
@@ -658,7 +648,6 @@ system_ext/lib64/vendor.qti.diaghal@1.0.so|d0e63f3676a43466122d3494f2c82472546c7
 
 # Radio (IMS) - from LA.UM.9.1.r1-12900-SMxxx0.0
 system_ext/app/ImsRcsService/ImsRcsService.apk|c0566bd1093cc281df903f64f62945088d14087b
-system_ext/priv-app/ims/ims.apk|382b9c5942cb9420a2032912289ab855fb206885
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml|7ce9e6ccb5026b0aa87b0eb94a20448e2d4c481c
 system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar|cd039a9c8d919332d57f9945a92ccac21f20d6c5
 system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar|ab9114d0a99a7155d625ff04bf8d20a03fdfc10f
@@ -673,6 +662,7 @@ system_ext/lib64/libimscamera_jni.so|140dba66979472050d044958f2aaed537d18cdc2
 system_ext/lib64/libimsmedia_jni.so|d06732d17342e445477ba508ae575263dc2096cb
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|34da5e45ae4817ccff75c6b8d1d0c125ebd253ed
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so|e64aa8a21a8db69d2e2ea14929bb20ced99c119d
+system_ext/priv-app/ims/ims.apk|382b9c5942cb9420a2032912289ab855fb206885
 
 # IMS
 -vendor/bin/ims_rtp_daemon
@@ -799,8 +789,8 @@ vendor/etc/seccomp_policy/codec2.vendor.ext.policy
 # Neural Networks
 -vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
--vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
 -vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml
+-vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
 -vendor/lib64/libhexagon_nn_stub.so
 -vendor/lib64/libhta_hexagon_runtime.so
 -vendor/lib64/libnpu.so
@@ -820,16 +810,28 @@ system_ext/etc/permissions/qti_permissions.xml
 -vendor/bin/pd-mapper
 -vendor/bin/qrtr-ns
 -vendor/lib/libdiag.so
+-vendor/lib/libdiag.so
+-vendor/lib/libdsutils.so
 -vendor/lib/libdsutils.so
 -vendor/lib/libidl.so
+-vendor/lib/libidl.so
+-vendor/lib/libmdmdetect.so
 -vendor/lib/libmdmdetect.so
 -vendor/lib/libqmi.so
+-vendor/lib/libqmi.so
+-vendor/lib/libqmi_cci.so
 -vendor/lib/libqmi_cci.so
 -vendor/lib/libqmi_client_helper.so
+-vendor/lib/libqmi_client_helper.so
+-vendor/lib/libqmi_client_qmux.so
 -vendor/lib/libqmi_client_qmux.so
 -vendor/lib/libqmi_common_so.so
+-vendor/lib/libqmi_common_so.so
+-vendor/lib/libqmi_csi.so
 -vendor/lib/libqmi_csi.so
 -vendor/lib/libqmi_encdec.so
+-vendor/lib/libqmi_encdec.so
+-vendor/lib/libqmiservices.so
 -vendor/lib/libqmiservices.so
 -vendor/lib64/libdiag.so
 -vendor/lib64/libdsutils.so
@@ -847,18 +849,6 @@ system_ext/etc/permissions/qti_permissions.xml
 -vendor/lib64/libqrtr.so
 -vendor/lib64/libqsocket.so
 -vendor/lib64/libril-qc-hal-qmi.so
--vendor/lib/libdiag.so
--vendor/lib/libdsutils.so
--vendor/lib/libidl.so
--vendor/lib/libmdmdetect.so
--vendor/lib/libqmi_cci.so
--vendor/lib/libqmi_client_helper.so
--vendor/lib/libqmi_client_qmux.so
--vendor/lib/libqmi_common_so.so
--vendor/lib/libqmi_csi.so
--vendor/lib/libqmi_encdec.so
--vendor/lib/libqmiservices.so
--vendor/lib/libqmi.so
 
 # Radio - from LA.UM.9.1.r1-12900-SMxxx0.0
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|a32f88ddcc8f9cba18aa5697ee5bd52201e89b13
@@ -875,8 +865,8 @@ system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|60af440aae61fcd6939af56a0b
 system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml
 system_ext/etc/sysconfig/qti_whitelist_system_ext.xml
 system_ext/framework/qti-telephony-common.jar
--vendor/bin/hw/qcrild
 -vendor/bin/adpl
+-vendor/bin/hw/qcrild
 -vendor/bin/netmgrd
 -vendor/bin/qti
 -vendor/bin/rmt_storage
@@ -933,6 +923,7 @@ vendor/etc/init/vendor.qti.tftp.rc
 -vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 vendor/radio/qcril_database/upgrade/0_initial.sql
 vendor/radio/qcril_database/upgrade/10_version_update_ecc_table.sql
+vendor/radio/qcril_database/upgrade/10_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/11_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/12_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/13_version_update_ecc_table.sql
@@ -945,7 +936,6 @@ vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql
-vendor/radio/qcril_database/upgrade/10_version_update_ecc_table.sql
 
 # Sensors
 -vendor/bin/sensors.qti
