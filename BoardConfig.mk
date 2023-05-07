@@ -14,8 +14,6 @@
 # limitations under the License.
 #
 
-BOARD_VENDOR := xiaomi
-
 # Inherit from proprietary files for miuicamera
 -include vendor/xiaomi/sweet-miuicamera/products/board.mk
 
