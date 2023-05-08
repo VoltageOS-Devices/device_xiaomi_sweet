@@ -143,6 +143,7 @@ persist.vendor.dpm.nsrm.bkg.evt=3955
 persist.vendor.dpmhalservice.enable=1
 
 # Display
+debug.sf.auto_latch_unsignaled=1
 debug.sdm.support_writeback=0
 debug.sf.enable_transaction_tracing=false
 debug.sf.use_phase_offsets_as_durations=1
