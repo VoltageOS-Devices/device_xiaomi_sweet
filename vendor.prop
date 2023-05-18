@@ -172,6 +172,7 @@ vendor.display.enable_force_split=1
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
 debug.sf.treat_170m_as_sRGB=1
+vendor.display.override_doze_mode=1
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
