@@ -1,4 +1,4 @@
-# These proprietary files are extracted from Redmi Note 10 Pro (codenamed `sweet`) MIUI V14.0.2.0.TKFEUXM, unless pinned
+# These proprietary files are extracted from Redmi Note 10 Pro (codenamed `sweet`) MIUI V14.0.3.0.TKFEUXM, unless pinned
 
 # ADSP
 -vendor/bin/adsprpcd
@@ -378,8 +378,8 @@ vendor/app/IWlanService/IWlanService.apk
 -vendor/bin/cnd
 vendor/etc/cne/mwqem.conf
 vendor/etc/cne/profileMwqem.xml
-vendor/etc/init/cnd.rc
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
+vendor/etc/init/cnd.rc
 -vendor/lib64/libcne.so
 -vendor/lib64/libcneapiclient.so
 -vendor/lib64/libcneoplookup.so
