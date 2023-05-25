@@ -99,7 +99,6 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
 DEVICE_MANIFEST_FILE += hardware/qcom-caf/sm8150/media/conf_files/sm6150/c2_manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    $(DEVICE_PATH)/configs/hidl/device_framework_matrix.xml \
     $(DEVICE_PATH)/configs/hidl/xiaomi_framework_compatibility_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
 
@@ -154,13 +153,6 @@ else
 BOARD_BOOTIMG_HEADER_VERSION := 1
 endif
 BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
-
-# LiveDisplay
-ifneq ("$(wildcard hardware/lineage/livedisplay)", "")
-    SOONG_CONFIG_NAMESPACES += livedisplay
-    SOONG_CONFIG_livedisplay += enabled
-    SOONG_CONFIG_livedisplay_enabled := true
-endif
 
 # Media
 TARGET_USES_ION := true
