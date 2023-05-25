@@ -93,6 +93,9 @@ vendor/firmware/osc_rtp_24K_5s.bin
 -vendor/lib/libsndmonitor.so
 -vendor/lib/libspkrprot.so
 
+# Audio hardware (sound trigger) - from sunfish
+vendor/lib/hw/sound_trigger.primary.sm6150.so|fcfd71f5aceb1a4aad6dda211eebcc4e3ff605cb
+
 # Alarm
 product/app/PowerOffAlarm/PowerOffAlarm.apk
 -vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
