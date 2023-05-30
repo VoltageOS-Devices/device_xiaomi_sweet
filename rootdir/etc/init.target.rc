@@ -108,7 +108,7 @@ on property:sys.boot_completed=1
     swapon_all /vendor/etc/fstab.zram
 
     # Enable suspend to RAM
-    write /sys/power/mem_sleep "deep"
+    write /sys/power/mem_sleep "s2idle"
 
     # Runtime fs tuning
     write /sys/block/sda/queue/nr_requests 128
