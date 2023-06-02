@@ -1,7 +1,0 @@
-allow recovery service_manager_vndservice:service_manager { add };
-allow recovery service_manager_service:service_manager { add };
-allow recovery hidl_token_hwservice:hwservice_manager { add };
-allow recovery hal_health_hwservice:hwservice_manager { find };
-allow recovery vndbinder_device:chr_file { open };
-allow recovery vndbinder_device:chr_file { ioctl };
-allow recovery vndbinder_device:chr_file { write };
