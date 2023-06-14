@@ -39,6 +39,9 @@ PRODUCT_PACKAGES += \
     AntHalService-Soong \
     com.dsi.ant@1.0.vendor
 
+# Enable support for APEX updates
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.1-impl \
