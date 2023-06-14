@@ -467,6 +467,7 @@ vendor/etc/init/dpmQmiMgr.rc
 -vendor/bin/qseecomd
 vendor/etc/gpfspath_oem_config.xml
 vendor/etc/init/qseecomd.rc
+-vendor/lib/libsecureui.so
 -vendor/lib64/libGPreqcancel.so
 -vendor/lib64/libGPreqcancel_svc.so
 -vendor/lib64/libQSEEComAPI.so
@@ -480,6 +481,7 @@ vendor/etc/init/qseecomd.rc
 -vendor/lib64/libops.so
 -vendor/lib64/libqisl.so
 -vendor/lib64/librpmb.so
+-vendor/lib64/libsecureui.so
 -vendor/lib64/libssd.so
 -vendor/lib64/libtrustedapploader.so
 
