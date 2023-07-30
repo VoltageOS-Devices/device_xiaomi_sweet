@@ -1255,17 +1255,17 @@ vendor/lib64/soundfx/libswgamedap.so|0491096a45e14d8097ceb80c15c0f946bbade389
 vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|da03a56f6fbeb2bbe23ebb3a48b30fc3e5e76da3
 vendor/lib64/vendor.dolby.hardware.dms@2.0.so|45ab26d743b6a56b505447012347493ff41057fc
 
-# OzoProcessing - from MIUI Alioth 13.0.7.0 EU
-system_ext/lib/libav_ozodecoder.so:vendor/lib/libav_ozodecoder.so|a2733c6b45e4833dc819d577b047e10cb4f87f52
-system_ext/lib/libav_ozoencoder.so:vendor/lib/libav_ozoencoder.so|1b05a9df7c21fc3f7612c921adeee6baaed3e181
+# OzoProcessing - from MIUI V14.0.5.0.TKFEUXM
+system_ext/lib/libav_ozodecoder.so:vendor/lib/libav_ozodecoder.so|32b76b28af36c48439b96e43028d13bec2def9a9
+system_ext/lib/libav_ozoencoder.so:vendor/lib/libav_ozoencoder.so|85f4f43e248c692a87a5be10ed8bc343d6eb043b
 system_ext/lib/libozoaudio.so:vendor/lib/libozoaudio.so|f7a9df3949ab575448b8140dde70ae2acb397607
 system_ext/lib/libozowidening.so:vendor/lib/libozowidening.so|49c7d0dcf08ebacd84ee65644b7eaea6d566785a
-system_ext/lib/soundfx/libozoprocessing.so:vendor/lib/soundfx/libozoprocessing.so|3eeff7c0847ff303159c736f5adf0fd67c9c91a9
-system_ext/lib64/libav_ozodecoder.so:vendor/lib64/libav_ozodecoder.so|52ebb386661aff58ac403c2d546528538fc095c9
-system_ext/lib64/libav_ozoencoder.so:vendor/lib64/libav_ozoencoder.so|de9a8a0d841620deaa8ddc26d82eca683f06af29
+system_ext/lib/soundfx/libozoprocessing.so:vendor/lib/soundfx/libozoprocessing.so|c6cf42c41ffbf30b293d49aa54d4383b31ffd8b7
+system_ext/lib64/libav_ozodecoder.so:vendor/lib64/libav_ozodecoder.so|441b460e42aec6f3d9a8e81d20a51cefc2cfa510
+system_ext/lib64/libav_ozoencoder.so:vendor/lib64/libav_ozoencoder.so|f7acc9859603106ffe112cabfac054399b22e1a4
 system_ext/lib64/libozoaudio.so:vendor/lib64/libozoaudio.so|b13304b91911c7bc2f6c0e4c6e09b0a8b4dc94bf
 system_ext/lib64/libozowidening.so:vendor/lib64/libozowidening.so|957d749a4b1c1874124d2fbdf4981e927922bc9e
-system_ext/lib64/soundfx/libozoprocessing.so:vendor/lib64/soundfx/libozoprocessing.so|3a7a7252641cc39da386d66d83b802509ab9570d
+system_ext/lib64/soundfx/libozoprocessing.so:vendor/lib64/soundfx/libozoprocessing.so|9c64e82d354978b64dd0006357e704e81c7cc114
 
 # Xiaomi MAC
 -vendor/bin/nv_mac
