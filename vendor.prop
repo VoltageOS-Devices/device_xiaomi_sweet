@@ -113,6 +113,7 @@ persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 persist.vendor.btstack.enable.twsplus=true
 persist.vendor.btstack.enable.twsplussho=true
 persist.vendor.bt.a2dp.hal.implementation=true
+persist.vendor.bt.a2dp.aac_whitelist=false
 ro.bluetooth.a2dp_offload.supported=true
 ro.vendor.bluetooth.wipower=false
 vendor.qcom.bluetooth.soc=cherokee
