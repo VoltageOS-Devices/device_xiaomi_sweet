@@ -81,7 +81,6 @@ void vendor_load_properties() {
 
     std::string model;
     std::string device;
-    std::string fingerprint;
     std::string description;
     std::string mod_device;
     std::string marketname;
@@ -89,7 +88,6 @@ void vendor_load_properties() {
     if (region == "GLOBAL") {
         model = "M2101K6G";
         device = "sweet";
-        fingerprint = "Redmi/sweet_eea/sweet:13/RKQ1.210614.002/V14.0.5.0.TKFEUXM:user/release-keys";
         description = "sweet_eea-user 13 RKQ1.210614.002 V14.0.5.0.TKFEUXM release-keys";
         marketname = "Redmi Note 10 Pro";
         mod_device = "sweet_eea_global";
@@ -97,7 +95,6 @@ void vendor_load_properties() {
     } else if (region == "JAPAN") {
         model = "M2101K6R";
         device = "sweet";
-        fingerprint = "Redmi/sweet_global/sweet:13/RKQ1.210614.002/V14.0.4.0.TKFMIXM:user/release-keys";
         description = "sweet_global-user 13 RKQ1.210614.002 V14.0.4.0.TKFMIXM release-keys";
         marketname = "Redmi Note 10 Pro";
         mod_device = "sweet_global";
@@ -106,21 +103,18 @@ void vendor_load_properties() {
         if (sku == "std") {
             model = "M2101K6P";
             device = "sweetin";
-            fingerprint = "Redmi/sweetin/sweetin:13/RKQ1.210614.002/V14.0.1.0.TKFINXM:user/release-keys";
             description = "sweetin-user 13 RKQ1.210614.002 V14.0.1.0.TKFINXM release-keys";
             marketname = "Redmi Note 10 Pro";
             mod_device = "sweetin_in_global";
         } else {
             model = "M2101K6I";
             device = "sweetin";
-            fingerprint = "Redmi/sweetinpro/sweetin:13/RKQ1.210614.002/V14.0.1.0.TKFINXM:user/release-keys";
             description = "sweetinpro-user 13 RKQ1.210614.002 V14.0.1.0.TKFINXM release-keys";
             marketname = "Redmi Note 10 Pro Max";
             mod_device = "sweetin_in_global";
             }
     }
 
-    set_ro_build_prop("fingerprint", fingerprint);
     set_ro_product_prop("device", device);
     set_ro_product_prop("model", model);
     property_override("ro.build.description", description.c_str());
