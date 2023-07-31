@@ -113,8 +113,14 @@ system_ext/framework/audiosphere.jar
 vendor/lib/libstagefright_soft_qtiflacdec.so
 -vendor/lib/soundfx/libasphere.so
 -vendor/lib/soundfx/libmisoundfx.so
+vendor/lib/soundfx/libqcbassboost.so
+vendor/lib/soundfx/libqcreverb.so
+vendor/lib/soundfx/libqcvirt.so
 -vendor/lib/soundfx/libshoebox.so
 -vendor/lib/soundfx/libswvqe.so
+vendor/lib64/soundfx/libqcbassboost.so
+vendor/lib64/soundfx/libqcreverb.so
+vendor/lib64/soundfx/libqcvirt.so
 -vendor/lib64/soundfx/libswvqe.so
 
 # Batterysecret
