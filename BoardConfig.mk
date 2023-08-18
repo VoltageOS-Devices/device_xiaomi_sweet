@@ -114,7 +114,10 @@ HWUI_COMPILE_FOR_PERF := true
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
-
+BOARD_BOOTIMG_HEADER_VERSION := 2
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
+BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_ADDITIONAL_FLAGS := AS=llvm-as AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip LD=ld.lld LLVM=1 LLVM_IAS=1
 TARGET_KERNEL_CLANG_COMPILE := true
 KERNEL_SUPPORTS_LLVM_TOOLS := true
@@ -122,7 +125,6 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/sweet
 TARGET_KERNEL_CONFIG := vendor/sweet_user_defconfig
 TARGET_KERNEL_CLANG_VERSION := playground
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-playground
-
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0x880000
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
@@ -131,25 +133,6 @@ BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1
 BOARD_KERNEL_CMDLINE += loop.max_part=7
 KERNEL_LD := LD=ld.lld
 BOARD_KERNEL_CMDLINE += kpti=off
-
-# TARGET_KERNEL_APPEND_DTB handling
-ifeq ($(strip $(PRODUCT_USE_DYNAMIC_PARTITIONS)),true)
-BOARD_KERNEL_IMAGE_NAME := Image.gz
-TARGET_KERNEL_APPEND_DTB := false
-else
-BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-TARGET_KERNEL_APPEND_DTB := true
-endif
-
-# Set header version for bootimage
-ifneq ($(strip $(TARGET_KERNEL_APPEND_DTB)),true)
-# Enable DTB in bootimage and set header version
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-BOARD_BOOTIMG_HEADER_VERSION := 2
-else
-BOARD_BOOTIMG_HEADER_VERSION := 1
-endif
-BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 
 # Media
 TARGET_USES_ION := true
