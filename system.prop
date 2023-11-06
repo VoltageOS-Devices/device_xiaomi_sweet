@@ -97,5 +97,3 @@ media.wfd.max_resolution=5
 # Zygote
 persist.device_config.runtime_native.usap_pool_enabled=true
 
-# Disable Remote Keygaurd animation
-persist.wm.enable_remote_keyguard_animation=0
