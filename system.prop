@@ -10,11 +10,6 @@ persist.vendor.btstack.absvolfeature=true
 persist.vendor.btstack.connect.peer_earbud=true
 vendor.bluetooth.soc=cherokee
 
-# Blur
-ro.surface_flinger.supports_background_blur=1
-persist.sys.sf.disable_blurs=1
-ro.sf.blurs_are_expensive=1
-
 # Camera
 persist.vendor.camera.privapp.list=app.grapheneos.camera,org.codeaurora.snapcam,com.android.camera
 vendor.camera.aux.packagelist=app.grapheneos.camera,org.codeaurora.snapcam,com.android.camera,org.lineageos.aperture.dev,com.voltage.flash
