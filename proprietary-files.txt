@@ -482,6 +482,8 @@ vendor/etc/init/dpmQmiMgr.rc
 vendor/etc/gpfspath_oem_config.xml
 vendor/etc/init/qseecomd.rc
 -vendor/lib/libsecureui.so
+-vendor/lib/libStDrvInt.so
+-vendor/lib/libsecureui_svcsock.so
 -vendor/lib64/libGPreqcancel.so
 -vendor/lib64/libGPreqcancel_svc.so
 -vendor/lib64/libQSEEComAPI.so
@@ -498,6 +500,8 @@ vendor/etc/init/qseecomd.rc
 -vendor/lib64/libsecureui.so
 -vendor/lib64/libssd.so
 -vendor/lib64/libtrustedapploader.so
+-vendor/lib64/libStDrvInt.so
+-vendor/lib64/libsecureui_svcsock.so
 
 # DRM (libspl) - from LA.UM.9.1.r1-12900-SMxxx0.0
 vendor/lib/libspl.so|ec1ae86b1727e33c87fd8c00ebe02d8734510745
@@ -677,6 +681,12 @@ vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so|3ff445db2dd2db1a1068fe70a54a6c
 # Radio (diag) - from LA.QSSI.13.0.r1-10000.02-qssi.0
 system_ext/lib64/libdiag_system.so|77562f2b9a3bcbf7ce8106446c1cf2443c28accc
 system_ext/lib64/vendor.qti.diaghal@1.0.so|ffab1580dbc117104f21208c3940e4f14c2d1b37
+
+# TUI
+system_ext/lib64/vendor.qti.hardware.tui_comm@1.0.so
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
+vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # HotwordEnrollment
 product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk;PRESIGNED
