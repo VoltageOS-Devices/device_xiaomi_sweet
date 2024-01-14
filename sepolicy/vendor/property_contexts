@@ -20,6 +20,10 @@ vendor.fps_hal.                    u:object_r:vendor_fp_prop:s0
 # Hardware
 ro.hardware.chipname               u:object_r:build_prop:s0
 
+# Radio
+ro.vendor.ril.svlte1x                           u:object_r:vendor_radio_prop:s0
+ro.vendor.ril.svdo                              u:object_r:vendor_radio_prop:s0
+
 # Power HAL
 vendor.powerhal.                   u:object_r:vendor_power_prop:s0
 
