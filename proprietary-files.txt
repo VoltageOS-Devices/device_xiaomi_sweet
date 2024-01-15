@@ -1,4 +1,4 @@
-# These proprietary files are extracted from Redmi Note 10 Pro (codenamed `sweet`) MIUI V14.0.5.0.TKFEUXM, unless pinned
+# These proprietary files are extracted from Redmi Note 10 Pro (codenamed `sweet`) MIUI V14.0.9.0.TKFEUXM, unless pinned
 
 # ADSP
 -vendor/bin/adsprpcd
@@ -19,11 +19,14 @@ vendor/etc/init/vendor.qti.cdsprpc-service.rc
 -vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so
 -vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
 -vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
+-vendor/lib/rfsa/adsp/capi_v2_dap_cpdp.so
 vendor/lib/rfsa/adsp/dirac_resource.dar
 -vendor/lib/rfsa/adsp/libVC1Dec.so
 -vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so
 -vendor/lib/rfsa/adsp/libapps_mem_heap.so
+-vendor/lib/rfsa/adsp/libarc_hta_driver_skel.so
 -vendor/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so
+-vendor/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so
 -vendor/lib/rfsa/adsp/libcamera_nn_skel.so
 -vendor/lib/rfsa/adsp/libcvpdsp_skel.so
 -vendor/lib/rfsa/adsp/libdirac-capiv2.so
@@ -35,8 +38,12 @@ vendor/lib/rfsa/adsp/dirac_resource.dar
 -vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
 -vendor/lib/rfsa/adsp/libhexagon_nn_skel.so
 -vendor/lib/rfsa/adsp/libhexagon_nn_skel_secondary.so
+-vendor/lib/rfsa/adsp/libhta_dsp_skel.so
+-vendor/lib/rfsa/adsp/libmialgo_rfs_cdsp_skel.so
 -vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
 -vendor/lib/rfsa/adsp/libscveT2T_skel.so
+-vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so
+-vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so
 -vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
 -vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/lib/rfsa/adsp/misound_karaoke_res.bin
@@ -49,6 +56,7 @@ vendor/lib/rfsa/adsp/misound_res_spk.bin
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_Codec_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_General_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_Global_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_Handset_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_Hdmi_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb
@@ -60,9 +68,6 @@ vendor/etc/acdbdata/adsp_avs_config.acdb
 -vendor/lib/libacdbrtac.so
 -vendor/lib/libadiertac.so
 -vendor/lib/libaudcal.so
-
-# Audio ACDB - V12.5.2.0.RKFINXM-release-keys
-vendor/etc/acdbdata/Forte/Forte_Global_cal.acdb|b34ec442b87c1acb88dafd55fd86e77acbb003a3
 
 # Awinic firmware
 vendor/firmware/aw8624_haptic.bin
@@ -966,6 +971,7 @@ vendor/radio/qcril_database/upgrade/10_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/11_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/12_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/13_version_update_ecc_table.sql
+vendor/radio/qcril_database/upgrade/14_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/1_version_intro.sql
 vendor/radio/qcril_database/upgrade/2_version_add_wps_config.sql
 vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql
@@ -1256,17 +1262,17 @@ vendor/lib64/soundfx/libswgamedap.so|0491096a45e14d8097ceb80c15c0f946bbade389
 vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|da03a56f6fbeb2bbe23ebb3a48b30fc3e5e76da3
 vendor/lib64/vendor.dolby.hardware.dms@2.0.so|45ab26d743b6a56b505447012347493ff41057fc
 
-# OzoProcessing - from MIUI V14.0.5.0.TKFEUXM
-system_ext/lib/libav_ozodecoder.so:vendor/lib/libav_ozodecoder.so|32b76b28af36c48439b96e43028d13bec2def9a9
-system_ext/lib/libav_ozoencoder.so:vendor/lib/libav_ozoencoder.so|85f4f43e248c692a87a5be10ed8bc343d6eb043b
-system_ext/lib/libozoaudio.so:vendor/lib/libozoaudio.so|f7a9df3949ab575448b8140dde70ae2acb397607
-system_ext/lib/libozowidening.so:vendor/lib/libozowidening.so|49c7d0dcf08ebacd84ee65644b7eaea6d566785a
-system_ext/lib/soundfx/libozoprocessing.so:vendor/lib/soundfx/libozoprocessing.so|c6cf42c41ffbf30b293d49aa54d4383b31ffd8b7
-system_ext/lib64/libav_ozodecoder.so:vendor/lib64/libav_ozodecoder.so|441b460e42aec6f3d9a8e81d20a51cefc2cfa510
-system_ext/lib64/libav_ozoencoder.so:vendor/lib64/libav_ozoencoder.so|f7acc9859603106ffe112cabfac054399b22e1a4
-system_ext/lib64/libozoaudio.so:vendor/lib64/libozoaudio.so|b13304b91911c7bc2f6c0e4c6e09b0a8b4dc94bf
-system_ext/lib64/libozowidening.so:vendor/lib64/libozowidening.so|957d749a4b1c1874124d2fbdf4981e927922bc9e
-system_ext/lib64/soundfx/libozoprocessing.so:vendor/lib64/soundfx/libozoprocessing.so|9c64e82d354978b64dd0006357e704e81c7cc114
+# OzoProcessing 
+system_ext/lib/libav_ozodecoder.so:vendor/lib/libav_ozodecoder.so
+system_ext/lib/libav_ozoencoder.so:vendor/lib/libav_ozoencoder.so
+system_ext/lib/libozoaudio.so:vendor/lib/libozoaudio.so
+system_ext/lib/libozowidening.so:vendor/lib/libozowidening.so
+system_ext/lib/soundfx/libozoprocessing.so:vendor/lib/soundfx/libozoprocessing.so
+system_ext/lib64/libav_ozodecoder.so:vendor/lib64/libav_ozodecoder.so
+system_ext/lib64/libav_ozoencoder.so:vendor/lib64/libav_ozoencoder.so
+system_ext/lib64/libozoaudio.so:vendor/lib64/libozoaudio.so
+system_ext/lib64/libozowidening.so:vendor/lib64/libozowidening.so
+system_ext/lib64/soundfx/libozoprocessing.so:vendor/lib64/soundfx/libozoprocessing.so
 
 # Xiaomi MAC
 -vendor/bin/nv_mac
