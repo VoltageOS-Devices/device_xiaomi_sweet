@@ -96,18 +96,8 @@
       "Path": "/sys/class/kgsl/kgsl-3d0/idle_timer",
       "Values": [
         "10000",
-        "60"
+        "80"
       ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "FgSchedtunePreferIdle",
-      "Path": "/dev/stune/foreground/schedtune.prefer_idle",
-      "Values": [
-        "1",
-        "0"
-      ],
-      "DefaultIndex": 0,
       "ResetOnInit": true
     },
     {
@@ -115,10 +105,8 @@
       "Path": "/dev/stune/top-app/schedtune.boost",
       "Values": [
         "40",
-        "10",
-        "0"
+        "10"
       ],
-      "DefaultIndex": 1,
       "ResetOnInit": true
     },
     {
@@ -128,16 +116,6 @@
         "1",
         "0"
       ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "TASchedtunePreferIdle",
-      "Path": "/dev/stune/top-app/schedtune.prefer_idle",
-      "Values": [
-        "1",
-        "0"
-      ],
-      "DefaultIndex": 0,
       "ResetOnInit": true
     },
     {
@@ -181,7 +159,7 @@
       "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/io_percent",
       "Values": [
         "80",
-        "68"
+        "34"
       ],
       "ResetOnInit": true
     },
@@ -264,8 +242,8 @@
       "Name": "PMQoSCpuDmaLatency",
       "Path": "/dev/cpu_dma_latency",
       "Values": [
-        "0x00000043",
-        "0x00000064"
+        "44",
+        "100"
       ],
       "HoldFd": true
     },
@@ -405,6 +383,12 @@
     },
     {
       "PowerHint": "LAUNCH",
+      "Node": "PMQoSCpuDmaLatency",
+      "Duration": 3000,
+      "Value": "44"
+    },
+    {
+      "PowerHint": "LAUNCH",
       "Node": "CPUBWHystTriggerCount",
       "Duration": 3000,
       "Value": "0"
@@ -467,7 +451,7 @@
       "PowerHint": "AUDIO_LAUNCH",
       "Node": "PMQoSCpuDmaLatency",
       "Duration": 2000,
-      "Value": "0x00000043"
+      "Value": "44"
     },
     {
       "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
@@ -479,7 +463,7 @@
       "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
       "Node": "PMQoSCpuDmaLatency",
       "Duration": 0,
-      "Value": "0x00000043"
+      "Value": "44"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
@@ -503,61 +487,7 @@
       "PowerHint": "TPU_BOOST",
       "Node": "PMQoSCpuDmaLatency",
       "Duration": 2000,
-      "Value": "0x00000043"
-    },
-    {
-      "PowerHint": "DISPLAY_INACTIVE",
-      "Node": "TASchedtuneBoost",
-      "Duration": 0,
-      "Value": "0"
-    },
-    {
-      "PowerHint": "DISPLAY_INACTIVE",
-      "Node": "FgSchedtunePreferIdle",
-      "Duration": 0,
-      "Value": "0"
-    },
-    {
-      "PowerHint": "DISPLAY_INACTIVE",
-      "Node": "TASchedtunePreferIdle",
-      "Duration": 0,
-      "Value": "0"
-    },
-    {
-      "PowerHint": "FIXED_PERFORMANCE",
-      "Node": "CPUBigClusterMaxFreq",
-      "Duration": 0,
-      "Value": "9999999"
-    },
-    {
-      "PowerHint": "FIXED_PERFORMANCE",
-      "Node": "CPUBigClusterMinFreq",
-      "Duration": 0,
-      "Value": "9999999"
-    },
-    {
-      "PowerHint": "FIXED_PERFORMANCE",
-      "Node": "CPULittleClusterMaxFreq",
-      "Duration": 0,
-      "Value": "9999999"
-    },
-    {
-      "PowerHint": "FIXED_PERFORMANCE",
-      "Node": "CPULittleClusterMinFreq",
-      "Duration": 0,
-      "Value": "9999999"
-    },
-    {
-      "PowerHint": "FIXED_PERFORMANCE",
-      "Node": "GPUMaxFreq",
-      "Duration": 0,
-      "Value": "0"
-    },
-    {
-      "PowerHint": "FIXED_PERFORMANCE",
-      "Node": "GPUMinFreq",
-      "Duration": 0,
-      "Value": "0"
+      "Value": "44"
     }
   ]
 }
