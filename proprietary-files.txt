@@ -925,7 +925,7 @@ vendor/lib64/sensors.mius.proximity.so|a2850e44e7009fba6ce1f31529e6aa6abdc92a0c
 # Thermal
 vendor/bin/mi_thermald|82613d51892cf9519272770a455267c55f9abcbc
 vendor/bin/thermal-engine|3de16e7d6ce98134c3f2da95c874c5fb4d3ad4dd
-vendor/etc/init/init.mi_thermald.rc|434b0cc0cb28b84255e5415d66b07cc75a4e9af1
+vendor/etc/init/init.mi_thermald.rc|434b0cc0cb28b84255e5415d66b07cc75a4e9af1|2b2891d3c47888c6da7266dfeec9e71b02e511a5
 vendor/etc/thermal-camera.conf|b657e4819f872dc64bd4e7ff4c317c2c092d6a00
 vendor/etc/thermal-chg-only.conf|67559ab54a0fa22d5469450210d5408a25a1fd0e
 vendor/etc/thermal-class0.conf|74b6ba035c6215c182c8317fa6242473abf76cae
