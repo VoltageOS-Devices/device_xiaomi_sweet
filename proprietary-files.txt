@@ -593,7 +593,7 @@ vendor/lib/libspkrprot.so|67a0d02a525768bf52f555422d98ba7a37dcf0bb
 
 # Batterysecret
 vendor/bin/batterysecret|ef5d7bb1b86d94ebd934412e51282046c8e13525
-vendor/etc/init/init.batterysecret.rc|9abbe6fd82a0bd5b4499bfe141a5645e76e57606
+vendor/etc/init/init.batterysecret.rc|9abbe6fd82a0bd5b4499bfe141a5645e76e57606|b4a4a599537c84211527f9892fcf89dbaaae65c5
 
 # Camera
 vendor/lib64/hw/camera.qcom.so|ccff48160897bd8068830b770ae22b1f3178878c

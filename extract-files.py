@@ -88,6 +88,8 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('rpcmem_to_fd'),
     'vendor/etc/init/init.mi_thermald.rc': blob_fixup()
         .regex_replace(' +seclabel u:r:mi_thermald:s0\n', ''),
+    'vendor/etc/init/init.batterysecret.rc': blob_fixup()
+        .regex_replace(' +seclabel u:r:batterysecret:s0\n', ''),
 }  # fmt: skip
 module = ExtractUtilsModule(
     'sweet',
