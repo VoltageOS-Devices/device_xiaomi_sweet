@@ -70,7 +70,8 @@
 /vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.xiaomi_sm6150    u:object_r:hal_vibrator_default_exec:s0
 
 # IR
-/dev/ir_spi                                                          u:object_r:vendor_ir_device:s0
+/dev/lirc[0-9]+                                                   u:object_r:lirc_device:s0
+/vendor/bin/hw/android\.hardware\.ir-service\.xiaomi              u:object_r:hal_ir_default_exec:s0
 
 # Battery secret
 /vendor/bin/batterysecret                                         u:object_r:batterysecret_exec:s0
