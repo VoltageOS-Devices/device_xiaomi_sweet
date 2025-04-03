@@ -130,7 +130,6 @@ BOARD_KERNEL_CMDLINE += cgroup_disable=pressure
 
 # Media
 TARGET_USES_ION := true
-TARGET_DISABLED_UBWC := true
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
