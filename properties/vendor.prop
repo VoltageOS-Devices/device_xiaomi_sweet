@@ -188,6 +188,10 @@ vendor.display.enable_force_split=1
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
 debug.sf.treat_170m_as_sRGB=1
+ro.surface_flinger.set_idle_timer_ms=4000
+ro.surface_flinger.set_touch_timer_ms=4000
+ro.surface_flinger.set_display_power_timer_ms=1000
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.config.avoid_gfx_accel=true
 debug.sf.frame_rate_multiple_threshold=120
 
