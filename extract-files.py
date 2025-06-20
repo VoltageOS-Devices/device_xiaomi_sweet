@@ -43,6 +43,20 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    ('vendor/lib/libspkrprot.so', 'vendor/lib64/libspkrprot.so'): blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
+    ('vendor/lib/libsndmonitor.so', 'vendor/lib64/libsndmonitor.so'): blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
+    ('vendor/lib/libhfp.so', 'vendor/lib64/libhfp.so'): blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
+    ('vendor/lib/libhdmiedid.so', 'vendor/lib64/libhdmiedid.so'): blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
+    ('vendor/lib/libaudioroute_ext.so', 'vendor/lib64/libaudioroute_ext.so'): blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
+    ('vendor/lib/liba2dpoffload.so', 'vendor/lib64/liba2dpoffload.so'): blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
+    ('vendor/lib/hw/audio.primary.sm6150.so', 'vendor/lib64/hw/audio.primary.sm6150.so'): blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
     ('vendor/lib64/hw/camera.qcom.so', 'vendor/lib64/libFaceDetectpp-0.5.2.so', 'vendor/lib64/libfacedet.so'): blob_fixup()
         .binary_regex_replace(b'libmegface.so', b'libfacedet.so')
         .binary_regex_replace(b'libMegviiFacepp-0.5.2.so', b'libFaceDetectpp-0.5.2.so')
