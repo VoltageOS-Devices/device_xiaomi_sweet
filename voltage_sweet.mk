@@ -14,7 +14,7 @@ $(call inherit-product, device/xiaomi/sweet/device.mk)
 
 # Inherit common Voltage OS  Stuff.
 $(call inherit-product, vendor/voltage/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 2160
+TARGET_BOOT_ANIMATION_RES := 1920
 PRODUCT_NAME := voltage_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Xiaomi
