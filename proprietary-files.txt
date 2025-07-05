@@ -1,3 +1,4 @@
+# These proprietary files are extracted from Redmi Note 12 Pro (codenamed `sweet_k6a`) OS1.0.19.0.THGMIXM, unless pinned
 # Device specific blobs are from Redmi Note 10 Pro (codenamed `sweet`) MIUI V14.0.9.0.TKFEUXM
 # Current blobs with ELF checks disabled:
 # com.qti.chi.override, libmialgoengine depend on libgrallocutils, which is a gnu makefile target
