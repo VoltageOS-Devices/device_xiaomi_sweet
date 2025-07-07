@@ -55,7 +55,8 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl\
     libaudioroute.vendor\
     libstagefright_softomx_plugin.vendor\
-    android.hardware.soundtrigger@2.3-impl
+    android.hardware.soundtrigger@2.3-impl\
+    android.hardware.audio.sounddose-vendor-impl
 
 
 PRODUCT_PACKAGES += \
