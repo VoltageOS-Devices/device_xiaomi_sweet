@@ -532,6 +532,9 @@ PRODUCT_PACKAGES += \
     vndservicemanager
 
 # WiFi
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom/wlan
+
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     hostapd \
