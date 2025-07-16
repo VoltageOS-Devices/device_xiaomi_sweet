@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2025 VoltageOS
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Pocket Lock -->
+    <bool name="config_pocketModeSupported">false</bool>
+</resources>
