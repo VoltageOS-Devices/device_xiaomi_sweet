@@ -16,6 +16,7 @@ from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
 )
+
 namespace_imports = [
     'device/xiaomi/sweet',
     'vendor/xiaomi/sweet',
@@ -27,8 +28,12 @@ namespace_imports = [
     'vendor/qcom/opensource/dataservices',
     'vendor/qcom/opensource/display',
 ]
+
+
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
     return f'{lib}_{partition}' if partition == 'vendor' else None
+
+
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
     (
@@ -37,9 +42,7 @@ lib_fixups: lib_fixups_user_type = {
         'vendor.qti.hardware.fm@1.0',
         'vendor.qti.imsrtpservice@3.0',
     ): lib_fixup_vendor_suffix,
-    (
-        'libwpa_client',
-    ): lib_fixup_remove,
+    ('libwpa_client',): lib_fixup_remove,
 }
 
 blob_fixups: blob_fixups_user_type = {
