@@ -1,6 +1,6 @@
-# These proprietary files are extracted from Redmi Note 12 Pro (codenamed `sweet_k6a`) OS1.0.19.0.THGMIXM, unless pinned
-# Device specific blobs are from Redmi Note 10 Pro (codenamed `sweet`) MIUI V14.0.9.0.TKFEUXM
 # Current blobs with ELF checks disabled:
+# Device specific blobs are from Redmi Note 10 Pro (codenamed `sweet`) MIUI V14.0.9.0.TKFEUXM
+# These proprietary files are extracted from Redmi Note 12 Pro (codenamed `sweet_k6a`) OS1.0.19.0.THGMIXM, unless pinned
 # com.qti.chi.override, libmialgoengine depend on libgrallocutils, which is a gnu makefile target
 # imsdatadaemon, libcne, libwqe, lowi-server depend on libwpa_client, which is a gnu makefile target
 
@@ -163,8 +163,8 @@ vendor/lib64/libdpmqmihal.so
 
 # DRM
 vendor/bin/qseecomd
-vendor/etc/gpfspath_oem_config.xml
 vendor/etc/init/qseecomd.rc
+vendor/etc/gpfspath_oem_config.xml
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libGPreqcancel_svc.so
 vendor/lib64/libQSEEComAPI.so
@@ -184,8 +184,8 @@ vendor/lib64/libtrustedapploader.so
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
-vendor/lib64/libwvhidl.so
 vendor/lib64/mediadrm/libwvdrmengine.so
+vendor/lib64/libwvhidl.so
 
 # DSP
 vendor/bin/dspservice
@@ -415,8 +415,8 @@ system_ext/etc/permissions/qcrilhook.xml
 system_ext/framework/qcrilhook.jar
 system_ext/framework/qti-telephony-common.jar
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
-vendor/bin/adpl
 vendor/bin/hw/qcrild
+vendor/bin/adpl
 vendor/bin/netmgrd
 vendor/bin/qti
 vendor/bin/rmt_storage
@@ -457,8 +457,8 @@ vendor/lib64/vendor.qti.hardware.radio.am@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.lpa@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.lpa@1.1.so
-vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.qcriNvOpt@1.0.so
+vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.1.so
@@ -474,7 +474,6 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
-vendor/radio/qcril_database/qcril.db
 vendor/radio/qcril_database/upgrade/0_initial.sql
 vendor/radio/qcril_database/upgrade/1_version_intro.sql
 vendor/radio/qcril_database/upgrade/2_version_add_wps_config.sql
@@ -482,6 +481,7 @@ vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql
 vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql
+vendor/radio/qcril_database/qcril.db
 
 
 # Soter
@@ -562,8 +562,6 @@ vendor/lib/libadiertac.so|cd9427aedb4c1c629e933785c98abfb64bf1b058
 vendor/lib/libaudcal.so|36664545295330b5e5164f93a12480acda3400d8
 
 # Awinic firmware
-vendor/firmware/aw8624_haptic.bin|d3c418c669c649cf7f2f0ee7c95f3df61cc65735
-vendor/firmware/aw8624_rtp.bin|3c06255839cd1884e8d9826952e9bfc7842dc671
 vendor/firmware/awinic/aw882xx_pid_1852_acf.bin|76b29872574da15ca3f7c799fbb55404933d48bd
 vendor/firmware/awinic/aw882xx_pid_1852_monitor.bin|2620c3853ec578931d7ecd3e14105368185b0840
 vendor/firmware/awinic/aw882xx_pid_2032_acf.bin|3ffeefad5681808971110347e83abd6e1be46925
@@ -572,16 +570,18 @@ vendor/firmware/awinic/aw882xx_rcv_reg_l.bin|1f131331cec12b7694ab1111c8f60d96f67
 vendor/firmware/awinic/aw882xx_rcv_reg_r.bin|01d3c58a5dda44c990c7a5bceaf4baee05e69504
 vendor/firmware/awinic/aw882xx_spk_reg_l.bin|8aba1ead5587badbb375d74dd57db6905dd4d8c3
 vendor/firmware/awinic/aw882xx_spk_reg_r.bin|f715ed112943e17cf7e9b5b6c57bdc7a77222910
+vendor/firmware/aw8624_haptic.bin|d3c418c669c649cf7f2f0ee7c95f3df61cc65735
+vendor/firmware/aw8624_rtp.bin|3c06255839cd1884e8d9826952e9bfc7842dc671
 vendor/firmware/osc_rtp_24K_5s.bin|9f32c9bf0776a566d3254129a028dae9bed76b81
 
 # Audio HAL
 vendor/lib/hw/audio.primary.sm6150.so|e843a8819ffa9ab4641eae0643025181bfe3752c
+vendor/lib/vndk/libxlog.so|bdb3d8d8b37bd4e1e84f59d912457690e7388f2e
 vendor/lib/libadm.so|7a1cfba258a1ca590011c2529f620b2db822acc7
 vendor/lib/libaudio_log_utils.so|007f0e1136d3ca422c9b6c59f7fbcc4588394d87
 vendor/lib/libaudioparsers.so|68826db8a2cdff81d835ec68573e6df75a7b3304
 vendor/lib/libaudioroute_ext.so|14f24de1732d64a5a5996ca08aac087cb36423a8
 vendor/lib/libqtigef.so|ef2f0eefe3b8b5e4d4bc559656de8c58cc461c01
-vendor/lib/vndk/libxlog.so|bdb3d8d8b37bd4e1e84f59d912457690e7388f2e
 
 # Audio extensions
 vendor/lib/btaudio_offload_if.so|a29488cfbf08a02b0d8d493a4fbe01ce2e5da3bc
@@ -675,6 +675,11 @@ vendor/lib64/libarcsoft_preview_deflicker.so|6f1da5473c0b79e99da1d2ea27db736f069
 vendor/lib64/libarcsoft_super_night_raw.so|a30ef90898eff351e6efc30f71b35db00f4a9d2a
 
 # Camera-components
+vendor/lib64/camera/components/etc/morpho_lowlight4.0.xml|39aa21900ab8aa4fb8f42ccd48873f5d174703c3
+vendor/lib64/camera/components/etc/morpho_lowlight4.0_3hdr.xml|00194b640a010429562406f0d0a047b4ed9d74fa
+vendor/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high.xml|dfc5e6919768a527868733ec118ca81515419f0d
+vendor/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high_1.xml|5cf337fd13d6c53c56e7571f1701e7023afcd228
+vendor/lib64/camera/components/etc/visidon_clearshot_params.xml|8041eed40eea41ad98576616a3edaf7da6ae097e
 vendor/lib64/camera/components/com.altek.node.depurple.so|cbab39bdc7fedd09a14ecb6a6f3fa9c7230781a7
 vendor/lib64/camera/components/com.altek.node.distortioncorrection.so|56ef9e952ea82031252e5a1a5b664006fd6cc159
 vendor/lib64/camera/components/com.arcsoft.node.capturebokeh.so|61c68649616e3fd5dd45251b570af02ccd9a7bf5
@@ -729,11 +734,6 @@ vendor/lib64/camera/components/com.xiaomi.node.mifilter.so|351bded16eb1cd894b029
 vendor/lib64/camera/components/com.xiaomi.node.mifragment.so|be91b217718fe85ed72b1f3ceeffb166b67e9136
 vendor/lib64/camera/components/com.xiaomi.node.mimovie.so|fc507b1b506493b4717285fc08859c464f305351
 vendor/lib64/camera/components/com.xiaomi.node.misegment.so|2e29dce497d86926c96ad4e79f33fac4e4657e18
-vendor/lib64/camera/components/etc/morpho_lowlight4.0.xml|39aa21900ab8aa4fb8f42ccd48873f5d174703c3
-vendor/lib64/camera/components/etc/morpho_lowlight4.0_3hdr.xml|00194b640a010429562406f0d0a047b4ed9d74fa
-vendor/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high.xml|dfc5e6919768a527868733ec118ca81515419f0d
-vendor/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high_1.xml|5cf337fd13d6c53c56e7571f1701e7023afcd228
-vendor/lib64/camera/components/etc/visidon_clearshot_params.xml|8041eed40eea41ad98576616a3edaf7da6ae097e
 vendor/lib64/camera/components/libdepthmapwrapper.so|8d83d6c1f03c0e3d3001f21631cc9a36767a0124
 vendor/lib64/camera/components/libmmcamera_cac3.so|5a78167cd8177bab9762d323f3d3cb5585312eb7
 
@@ -766,9 +766,9 @@ vendor/etc/camera/mibokeh_712_parameter.bin|afd046ff9cc811987642946ae1b2bda67d00
 vendor/etc/camera/sceneDetection.xml|2dd332b6308f83703e5c3961dc1a24ae62ff6b63
 vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin|1ca031d5f8eb0e6aa3eedf7df8d53223b5054bc5
 vendor/etc/camera/sr_params.xml|7cf5ff35965928f1f40737c0411162bc123dd947
-vendor/etc/camera/vidhance_calibration|acfc92fdfda0401fbc8b1bd1500e92d02ab85c1e
 vendor/etc/camera/vidhance_calibration_108m|edabc7d434a9d82fac686799464443678c2f245a
 vendor/etc/camera/vidhance_calibration_64m|af021ff2c4e9612ae8f5f45167e37ea9a3e8b7c6
+vendor/etc/camera/vidhance_calibration|acfc92fdfda0401fbc8b1bd1500e92d02ab85c1e
 vendor/etc/camera/watermark_font_2300_3199.dat|470c10429888b89966af5eb610b13b843a1a0248
 
 # Camera face detection
@@ -819,7 +819,7 @@ vendor/lib64/camera/fdconfigvideolite.bin|f3dfb2db6955221919245f382dd6132d9b28c7
 vendor/lib64/camera/com.qti.tuned.sweet_ofilm_s5kgw3_wide.bin|727410454921cbf6d56837ebf5c930fb948d7f15
 vendor/lib64/camera/com.qti.tuned.sweet_sunny_s5kgw3_wide.bin|34718fcf0dd5d3d30e383e02824145204772676d
 
-# DRM 
+# DRM
 vendor/lib64/liboemcrypto.so|5aa09ccd47c10e5f2d0ec0831260182ac2f9e6ec
 
 # Fingerprint
