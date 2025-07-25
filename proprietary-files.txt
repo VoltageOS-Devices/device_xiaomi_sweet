@@ -847,6 +847,7 @@ vendor/firmware/a618_gmu.bin|0c211ef8a3246d649a4ae52a926d128b61e3c264
 vendor/firmware/a630_sqe.fw|6526cbb24d614dd67dc18e3c80d5c4374a0b3f63
 
 # NFC
+vendor/etc/libnfc-nxp_RF.conf|678ba90c9f0451f6f3b26c79d1ef1a5d7fb02ce9
 vendor/etc/libnfc-nci.conf|c327a2939caa3d544c99e9fc49d74e67b150a5a2
 vendor/etc/libnfc-nxp.conf|8115120f8822e3868db486f50856a697af90b352
 vendor/lib/libpn553_fw.so:vendor/lib64/libpn553_fw.so;FIX_SONAME|4eecf74f968f166dc4d03a738850ae4b246aff11
