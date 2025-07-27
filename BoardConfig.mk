@@ -151,6 +151,7 @@ TARGET_SEPOLICY_DIR := msmsteppe
 include device/voltage/sepolicy/libion/sepolicy.mk
 include device/voltage/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
+include $(DEVICE_PATH)/sepolicy/SEPolicy-diag.mk
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
