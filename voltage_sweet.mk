@@ -12,6 +12,19 @@ TARGET_SUPPORTS_OMX_SERVICE := false
 # Inherit from sweet device
 $(call inherit-product, device/xiaomi/sweet/device.mk)
 
+# Voltage OS CPU Flag
+VOLTAGE_CPU_SMALL_CORES := 0,1,2,3,4,5
+VOLTAGE_CPU_BIG_CORES := 6,7
+
+# CPU Sets configuration
+VOLTAGE_CPU_BG := 0-3
+VOLTAGE_CPU_FG := 0-7
+VOLTAGE_CPU_LIMIT_BG := 0-2
+VOLTAGE_CPU_UNLIMIT_UI := 0-7
+VOLTAGE_CPU_LIMIT_UI := 0-5
+VOLTAGE_CPU_DISPLAY := 6-7
+VOLTAGE_CPU_AUDIO := 0-4
+
 # Inherit common Voltage OS  Stuff.
 $(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1920
