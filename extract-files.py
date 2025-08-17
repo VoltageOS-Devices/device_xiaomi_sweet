@@ -46,6 +46,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'vendor/lib64/camera/components/com.vidhance.node.eis.so': blob_fixup()
+        .replace_needed('libui.so', 'libui-v34.so'),
     ('vendor/lib/libspkrprot.so', 'vendor/lib64/libspkrprot.so'): blob_fixup()
         .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
     ('vendor/lib/libsndmonitor.so', 'vendor/lib64/libsndmonitor.so'): blob_fixup()
