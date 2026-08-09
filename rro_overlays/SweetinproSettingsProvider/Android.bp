@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "SweetinproSettingsProvider",
+    product_specific: true,
+}

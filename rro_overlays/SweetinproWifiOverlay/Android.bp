@@ -1,0 +1,5 @@
+runtime_resource_overlay {
+    name: "SweetinproWifiOverlay",
+    theme: "SweetinproWifiOverlay",
+    product_specific: true,
+}

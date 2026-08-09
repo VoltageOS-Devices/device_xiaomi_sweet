@@ -1,0 +1,9 @@
+on property:ro.boot.product.vendor.sku=sweet
+    enable vendor.nfc_hal_service
+
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.nxp
+    override
+    class early_hal
+    user nfc
+    group nfc drmrpc system
+    disabled
