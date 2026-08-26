@@ -1,3 +1,7 @@
+on boot
+    chmod 0660 /sys/class/power_supply/battery/charging_enabled
+    chown system system /sys/class/power_supply/battery/charging_enabled
+
 on property:ro.boot.product.vendor.sku=sweet
     enable vendor.nfc_hal_service
 
